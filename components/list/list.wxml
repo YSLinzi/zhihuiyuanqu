@@ -1,0 +1,11 @@
+<!--components/list/list.wxml-->
+<view class="pg_list">
+  <view class="left_image">
+    <image src="../../pages/assets/images/main_list2.jpg"></image>
+  </view>
+  <view class="right_text">
+    <view class="name">淘金山绿道</view>
+    <view class="kaifangtime">开放时间：9:00-18:00</view>
+    <view class="discribe">距离最近</view>
+  </view>
+</view>

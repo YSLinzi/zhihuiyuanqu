@@ -1,0 +1,28 @@
+{
+  "window": {
+    "navigationBarBackgroundColor": "#CFCFCF",
+    "navigationBarTextStyle": "black"
+  },
+  "pages": [
+    "pages/duotiaolvdao/duotiaolvdao"
+  ],
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#6EA3AA",
+    "list": [
+      {
+        "pagePath": "pages/duotiaolvdao/duotiaolvdao",
+        "iconPath":"./pages/assets/icon/zonglan.png",
+        "selectedIconPath":"./pages/assets/icon/zonglan_xuanzhong.png",
+        "text": "导览"
+      },
+      {
+        "pagePath": "pages/duotiaolvdao/duotiaolvdao",
+        "iconPath":"./pages/assets/icon/wode_weixuan.png",
+        "selectedIconPath":"./pages/assets/icon/wode_yixuan.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

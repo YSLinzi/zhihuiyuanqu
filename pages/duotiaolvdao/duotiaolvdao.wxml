@@ -1,0 +1,55 @@
+<!--pages/duotiaolvdao/duotiaolvdao.wxml-->
+<view class="pg_index">
+<!-- 轮播图开始 -->
+  <view class="index_swiper">
+    <swiper indicator-dots indicator-active-color="white" autoplay>
+      <swiper-item>
+        <image mode="widthFix" src="../assets/images/main_luobo1.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode="widthFix" src="../assets/images/mainluobo2.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode="widthFix" src="../assets/images/mainluobo3.png"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图结束 -->
+  <!-- 公告开始 -->
+  <view class="gonggao">
+    <view class="gonggao_icon">
+      <image src="../assets/icon/gonggao.png"></image>
+    </view>
+    <view class="gonggao_title">
+      <text>淘金山绿道重新开放</text>
+      <navigator>
+        <view class="xiangqing">详情>></view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 分类导航开始 -->
+<view class="index_cate">
+    <navigator>
+      <image mode="widthFix" src="../assets/icon/gonglve.png"></image>
+      <text>攻略游记</text>
+    </navigator>
+    <navigator>
+      <image mode="widthFix" src="../assets/icon/kepu_cheng.png"></image>
+      <text>趣味科普</text>
+    </navigator>
+    <navigator>
+      <image mode="widthFix" src="../assets/icon/jiaotong.png"></image>
+      <text>交通出行</text>
+    </navigator>
+    <navigator>
+      <image mode="widthFix" src="../assets/icon/tingche.png"></image>
+      <text>停车查询</text>
+    </navigator>
+  </view>
+<!-- 分类导航结束 -->
+  <view class="main_list">
+    <list></list>
+    <list></list>
+    <list></list>
+  </view>
+</view>

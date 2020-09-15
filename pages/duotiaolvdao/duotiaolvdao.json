@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"深i绿道",
+  "usingComponents": {
+    "list":"/components/list/list"
+  }
+}

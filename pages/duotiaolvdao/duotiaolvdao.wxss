@@ -1,0 +1,60 @@
+/* pages/duotiaolvdao/duotiaolvdao.wxss */
+page{
+  background-color: rgba(232, 232, 232, 0.902);
+}
+.pg_index .index_swiper{
+  padding: 5rpx 10rpx;
+}
+.pg_index .gonggao{
+  padding-top: 20rpx;
+  height: 80rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+.pg_index .gonggao .gonggao_icon{
+  padding:0 20rpx;
+  flex:1;
+}
+.pg_index .gonggao .gonggao_icon image{
+  height: 50rpx;
+  width: 50rpx;
+}
+.pg_index .gonggao .gonggao_title{
+  flex:10;
+  display: flex;
+}
+.pg_index .gonggao .gonggao_title text{
+  flex:8;
+  justify-content: center;
+  align-items: center;
+  font-size: 35rpx;
+}
+.pg_index .gonggao .gonggao_title navigator{
+  flex:2;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  margin-right: 0;
+}
+.pg_index .index_cate{
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 250rpx;
+  margin: 20rpx 0;
+}
+.pg_index .index_cate navigator{
+  flex:1;
+  padding:30rpx;
+}
+.pg_index .index_cate navigator text{
+  font-size: 30rpx;
+}
+.pg_index .index_cate image{
+  width: 100%;
+}
+.main_list{
+  width: 100%;
+  height: 500rpx;
+}

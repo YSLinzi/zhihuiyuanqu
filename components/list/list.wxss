@@ -1,0 +1,23 @@
+.pg_list{
+  background-color: white;
+  height:250rpx;
+  width: 100%;
+  display: flex;
+  border-bottom: 2rpx solid gray;
+}
+.pg_list .left_image{
+  flex:2;
+}
+.pg_list .left_image image{
+  margin:30rpx 20rpx;
+  width: 200rpx;
+  height: 200rpx;
+}
+.pg_list .right_text{
+  margin:40rpx 20rpx;
+  flex:5;
+  display: flex;
+  flex-direction: column;
+  font-size: 35rpx;
+  line-height: 60rpx;
+}
