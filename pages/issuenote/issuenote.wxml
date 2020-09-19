@@ -1,0 +1,30 @@
+<!--pages/issuenote/issuenote.wxml-->
+<view>
+  <view class="content">
+    <input class="title" placeholder="标题" placeholder-class="plas1"></input>
+    <view class='line' id="l1"></view>
+    <!-- <textarea class="inputarea" placeholder="写下你的游记~" placeholder-class="plas2" bindinput="inputTextArea"></textarea> -->
+     <editor id="editor" class="ql-container" placeholder="写下你的游记吧~" 
+      showImgSize showImgToolbar showImgResize bindinput="getEditorValue"  bindready="onEditorReady"></editor>
+    <view class='line' id="l2"></view>
+    <view class="bottomarea">
+      <view class='wrapper'>
+      <view class='toolbar' bindtap="format">
+        <i class="iconfont icon-zitijiacu {{formats.bold ? 'ql-active' : ''}}" data-name="bold"></i>
+        <i class="iconfont icon-zitixieti {{formats.italic ? 'ql-active' : ''}}" data-name="italic"></i>
+        <i class="iconfont icon-outdent" data-name="indent" data-value="-1"></i>
+        <i class="iconfont icon-indent" data-name="indent" data-value="+1"></i>
+        <i class="iconfont icon-fengexian" bindtap="insertDivider"></i>
+        <i class="iconfont icon-charutupian" bindtap="insertImage"></i>
+        <image class="send" src="/pages/assets/travel-img/sendto.png"></image>
+      </view>
+      </view>
+      <!-- <view class="picpart"  bindtap="insertImage">
+        <image class="pic" src="/pages/assets/travel-img/pic.png"></image>
+      </view>
+      <view class="sendpart"  bindtap="sendnotes">
+        <image class="send" src="/pages/assets/travel-img/sendto.png"></image>
+      </view> -->
+    </view>
+  </view>
+</view>

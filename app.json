@@ -4,7 +4,10 @@
     "navigationBarTextStyle": "black"
   },
   "pages": [
-    "pages/duotiaolvdao/duotiaolvdao"
+    "pages/duotiaolvdao/duotiaolvdao",
+    "pages/topicNotes/topicNotes",
+    "pages/travelNotes/travelNotes",
+    "pages/issuenote/issuenote"
   ],
   "tabBar": {
     "color": "#bfbfbf",

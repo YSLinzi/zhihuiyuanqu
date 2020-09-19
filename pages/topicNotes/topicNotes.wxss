@@ -1,0 +1,103 @@
+/* pages/topicNotes/topicNotes.wxss */
+.tab{
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.topic{
+  width:150rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topictext{
+  margin-top: 8rpx; /* 两个按键字能对齐 */
+  color: #A6662F;
+  font-size: 35rpx;
+  padding-bottom:8rpx; 
+  border-bottom: 1px solid #666666;
+  font-weight: bold;
+}
+
+.hotnotes{
+  width:150rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hottext{
+  color: #979797;
+  font-size: 35rpx;  
+}
+.select{
+  height: 40rpx;
+  width: 40rpx;
+  margin-top: 28rpx;
+}
+
+.btnissue{
+  width:180rpx;
+  height: 70rpx;
+  margin-top: 10rpx;
+  background-color:#F08A5D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15rpx;
+}
+.toissue{
+  color: #FFF;
+  font-size: 35rpx;
+  font-weight: bolder;
+}
+
+
+.content{
+  margin-bottom: 80rpx;
+}
+
+.item-box{
+  width: 690rpx;
+  height: 400rpx;
+  border: 1rpx solid #BBBBBB;
+  margin: 30rpx;
+  margin-bottom:10rpx; 
+  border-radius: 40rpx;
+}
+
+.titleimg{
+  width: 99.7%;
+  height: 76%;
+  margin-top: 0.2%;
+  margin-left: 1rpx;
+  margin-right: 1rpx;
+  border-radius: 40rpx 40rpx 0 0;
+}
+
+.titleArea{
+  position: relative;
+  left: 10rpx;
+  margin-bottom:10rpx; 
+  display: flex;
+}
+
+.title{
+  font-size: 32rpx;
+  font-weight: bolder;
+  color: #3E3E3E;
+  margin: 10rpx;
+  margin-top: 13rpx;
+}
+.dislikeimg{
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  margin-top: 15rpx;
+  right: 40rpx;
+}
+

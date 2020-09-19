@@ -29,7 +29,7 @@
   </view>
   <!-- 分类导航开始 -->
 <view class="index_cate">
-    <navigator>
+    <navigator url="../topicNotes/topicNotes">
       <image mode="widthFix" src="../assets/icon/gonglve.png"></image>
       <text>攻略游记</text>
     </navigator>

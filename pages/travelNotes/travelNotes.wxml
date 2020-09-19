@@ -1,0 +1,44 @@
+<!--pages/travelNotes/travelNotes.wxml-->
+<view class='tab'>
+<view class="topic" bindtap="totopicnotes">
+  <text class="topictext">主题攻略</text>
+</view>
+<view class="hotnotes" bindtap="totravelnotes">
+  <text class="hottext">热门游记</text>
+</view>
+<image class="select" src="/pages/assets/travel-img/select.png"></image>
+<view class='btnissue' bindtap="toissue">
+<text class="toissue">我要发布</text>
+</view> 
+</view>
+
+<view class="waterfull">
+    <view  class="left">
+      <block  wx:for="{{water}}" wx:key="">
+          <template is="wateritem" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+        </block>
+    </view>
+    <view  class="right">
+        <block class="right" wx:for="{{water}}" wx:key="">
+          <template is="wateritem" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+        </block>
+    </view>
+</view>
+
+
+<!-- 定义瀑布组件模板 -->
+<template name="wateritem">
+  <view class='item-box'>
+    <image class="titleimg" src="{{titleimg}}" mode="widthFix" ></image>
+    <view class="titleArea">
+      <text class="title">{{titletext}}</text>
+    </view>
+    <view class='line'></view>
+    <view class="buttominfo">
+        <image class="dislikeimg" src="/pages/assets/travel-img/dislike.png"></image>
+        <view class="likenum">
+        <text class="likenumtext">{{likenum}}</text>
+        </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,138 @@
+/* pages/travelNotes/travelNotes.wxss */
+.tab{
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.topic{
+  width:150rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topictext{
+  color: #979797;
+  font-size: 35rpx;
+}
+
+.hotnotes{
+  width:150rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hottext{
+  margin-top: 8rpx; 
+  color: #A6662F;
+  font-size: 35rpx;
+  padding-bottom:8rpx; 
+  border-bottom: 1px solid #666666;
+  font-weight: bold;
+}
+.select{
+  height: 40rpx;
+  width: 40rpx;
+  margin-top: 28rpx;
+}
+
+.btnissue{
+  width:180rpx;
+  height: 70rpx;
+  margin-top: 10rpx;
+  background-color:#F08A5D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15rpx;
+}
+.toissue{
+  color: #FFF;
+  font-size: 35rpx;
+  font-weight: bolder;
+}
+
+.waterfull{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  text-align: justify;
+  margin-top: 30rpx;
+}
+
+.left ,.right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right{
+  float: right;
+}
+
+.tmp{
+  width: 340rpx;
+  height: 480rpx;
+  border: 1rpx solid #7a7a7a;
+  margin: 5rpx;
+  margin-bottom: 10rpx;
+}
+
+.item-box{
+  width: 340rpx;
+  border: 1rpx solid #BBBBBB;
+  margin: 5rpx;
+  margin-bottom: 20rpx;
+}
+
+.titleimg{
+  width: 99.6%;
+  height: 70%;
+  margin-top: 0.2%;
+  margin-left: 0.4%;
+}
+
+.line{
+  height: 2rpx;
+  width: 94%;
+  border-bottom: 2rpx solid #BBBBBB;
+  margin-left: 3%; 
+}
+
+.buttominfo{
+  display: flex;
+  margin-bottom: 5rpx;
+  margin-top: 5rpx;
+}
+
+.titleArea{
+  position: relative;
+  left: 10rpx;
+  margin-bottom:10rpx; 
+  width: 94%;
+}
+
+.title{
+  font-size: 30rpx;
+  font-weight: bolder;
+  color: #101010;
+}
+
+.buttominfo{
+  position: relative;
+  left: 250rpx;
+  width: 120rpx;
+  margin-top: 10rpx;
+}
+.dislikeimg{
+  width: 36rpx;
+  height: 36rpx;
+  margin-top: 10rpx;
+}
+.likenum{
+  font-size: 30rpx;
+  margin-left: 5rpx;
+  margin-top: 10rpx;
+}
