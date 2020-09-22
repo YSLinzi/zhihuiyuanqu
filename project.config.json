@@ -4,16 +4,25 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
 		"coverView": true,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"enhance": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.12.0",
@@ -34,13 +43,78 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "趣味科普",
+					"pathName": "pages/kepu/kepu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "攻略",
+					"pathName": "pages/travelNotes/travelNotes",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "历史故事",
+					"pathName": "pages/lishigushi/lishigushi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "动植物",
+					"pathName": "pages/dongzhiwu/dongzhiwu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "科教活动",
+					"pathName": "pages/kejiao/kejiao",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我要提问",
+					"pathName": "pages/woyaotiwen/woyaotiwen",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "淘金山科普",
+					"pathName": "pages/taojinshankepu/taojinshankepu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/map/map",
+					"pathName": "pages/map/map",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }

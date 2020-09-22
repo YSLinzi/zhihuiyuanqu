@@ -1,0 +1,143 @@
+.tuijian{
+  height: 80%;
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: column;
+}
+.tuijian .tuijan_title{
+  flex:1;
+  font-size: 30rpx;
+  border-bottom: 1rpx  dashed gray;
+  margin: 20rpx 10rpx;
+  padding-bottom: 10rpx;
+}
+.tuijian .container{
+  flex:5;
+  display: flex;
+  border-bottom: 1rpx solid gray;
+}
+.tuijian .container .videoItem{
+  margin-left: 5%;
+  flex:2;
+}
+
+.tuijian .container .videoItem .videoplay{
+  width: 100%;
+  height: 100%;
+}
+.tuijian .container .videoposter{
+  position:relative;
+  flex:2;
+}
+.tuijian .container .videoposter .video_play_icon{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.tuijian .container .videoposter .video-image{
+  width: 100%;
+  height: 100%;
+ margin-left: 5%;
+ margin-top: 5%;
+}
+.tuijian .container .detail_text{
+  flex:3;
+  margin: 0 30rpx;
+}
+.tuijian .container .detail_text .video-title{
+  font-size: 33rpx;
+  font-weight: 400;
+  font-family:'微软雅黑';
+}
+.tuijian .container .detail_text text{
+  font-size: 28rpx;
+  display: -webkit-box;
+  /* 允许换行 */
+  white-space:normal;
+  /* 长字符运行换行显示 */
+  word-wrap: break-word;
+  /* 显示行数 */
+  -webkit-line-clamp: 3;
+  /* 垂直显示 */
+  -webkit-box-orient: vertical;
+  /* 超出部分隐藏 */
+  overflow: hidden;
+  /* 超出部分用'...'表示 */
+  text-overflow: ellipsis; 
+  line-height: 50rpx;
+}
+/* 感兴趣 */
+.ganxingqu{
+  height: 80%;
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: column;
+}
+.ganxingqu .ganxingqu_title{
+  flex:1;
+  font-size: 30rpx;
+  border-bottom: 1rpx  dashed gray;
+  margin: 20rpx 10rpx;
+  padding-bottom: 10rpx;
+}
+.ganxingqu .container{
+  flex:5;
+  display: flex;
+  border-bottom: 1rpx solid gray;
+}
+.ganxingqu .container .videoItem{
+  margin-left: 5%;
+  flex:2;
+}
+
+.ganxingqu .container .videoItem .videoplay{
+  width: 100%;
+  height: 100%;
+}
+.ganxingqu .container .videoposter{
+  position:relative;
+  flex:2;
+}
+.ganxingqu .container .videoposter .video_play_icon{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.ganxingqu .container .videoposter .video-image{
+  width: 100%;
+  height: 100%;
+ margin-left: 5%;
+ margin-top: 5%;
+}
+.ganxingqu .container .detail_text{
+  flex:3;
+  margin: 0 30rpx;
+}
+.ganxingqu .container .detail_text .video-title{
+  font-size: 33rpx;
+  font-weight: 400;
+  font-family:'微软雅黑';
+}
+.ganxingqu .container .detail_text text{
+  font-size: 28rpx;
+  display: -webkit-box;
+  /* 允许换行 */
+  white-space:normal;
+  /* 长字符运行换行显示 */
+  word-wrap: break-word;
+  /* 显示行数 */
+  -webkit-line-clamp: 3;
+  /* 垂直显示 */
+  -webkit-box-orient: vertical;
+  /* 超出部分隐藏 */
+  overflow: hidden;
+  /* 超出部分用'...'表示 */
+  text-overflow: ellipsis; 
+  line-height: 50rpx;
+}

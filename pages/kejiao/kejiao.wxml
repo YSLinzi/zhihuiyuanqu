@@ -1,0 +1,11 @@
+<view class="master">
+  <view class="ziranjiaoyu">
+    <view class="zirenjiaoyu_title">自然教育中心</view>
+    <image mode="widthFix" src="../assets/icon/ziranjiaoyu.svg"></image>
+  </view>
+  <view class="line"></view>
+  <view class="rengongzhineng">
+    <image src="../assets/icon/rengongzhineng.svg"></image>
+    <view class="rengongzhineng_title">青少年人工智能教育中心</view>
+  </view>
+</view>

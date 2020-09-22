@@ -1,0 +1,55 @@
+<!--搜索框开始 -->
+<search></search>
+<!-- 搜索框结束 -->
+<view class="tuijian">
+  <!-- 文字提示推荐 -->
+  <view class="tuijan_title">根据您当前位置，为您推荐以下相关历史故事——</view>
+  <!-- 推荐内容 -->
+  <view class="container">
+    <block wx:for="{{lishi}}" wx:for-item="item">
+    <!-- 视频 -->
+      <block  wx:if="{{item.videoId==videoCurrent}}">
+      <view class="videoItem">
+        <video class="videoplay" autoplay id="videoId" objectFit="fill" src="{{item.src}}"></video>
+      </view>
+      </block>
+      <block wx:else>
+        <view class="videoposter" data-videoId='{{item.videoId}}' bindtap="play">
+          <image class="video_play_icon" src="../assets/icon/play.png"></image>
+          <image mode="widthFix" class="video-image" src="{{item.videoImg}}"></image>
+        </view>
+      </block>
+        <!-- 文字 -->
+        <view class="detail_text">
+          <text class="video-title">{{item.title}}</text>
+          <text class="video_detail">{{item.detail}}</text>
+        </view>
+    </block>
+  </view>
+</view>
+<view class="ganxingqu">
+  <!-- 文字提示感兴趣 -->
+  <view class="ganxingqu_title">您可能感兴趣历史故事——</view>
+  <!-- 推荐内容 -->
+  <view class="container">
+    <block wx:for="{{lishi}}" wx:for-item="item">
+    <!-- 视频 -->
+      <block  wx:if="{{item.videoId==videoCurrent}}">
+      <view class="videoItem">
+        <video class="videoplay" autoplay id="videoId" objectFit="fill" src="{{item.src}}"></video>
+      </view>
+      </block>
+      <block wx:else>
+        <view class="videoposter" data-videoId='{{item.videoId}}' bindtap="play">
+          <image class="video_play_icon" src="../assets/icon/play.png"></image>
+          <image mode="widthFix" class="video-image" src="{{item.videoImg}}"></image>
+        </view>
+      </block>
+        <!-- 文字 -->
+        <view class="detail_text">
+          <text class="video-title">{{item.title}}</text>
+          <text class="video_detail">{{item.detail}}</text>
+        </view>
+    </block>
+  </view>
+</view>

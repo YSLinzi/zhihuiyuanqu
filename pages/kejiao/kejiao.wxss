@@ -1,0 +1,67 @@
+/* pages/kejiaohuodong/kejiao.wxss */
+.master{
+  display: flex;
+  flex-direction: column;
+  padding-top: 120rpx;
+}
+.ziranjiaoyu{
+  flex:1;
+  width: 70%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.ziranjiaoyu .zirenjiaoyu_title{
+  flex:1;
+  margin-left: -10%;
+  font-size: 45rpx;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.ziranjiaoyu image{
+  flex:2;
+  width: 300rpx;
+  height: 300rpx;
+  margin-left: 10%;
+}
+.line{
+ /*线的宽度*/
+  width:800rpx;
+  /*线的高度，就是线粗度*/
+  height:5rpx;
+  /*线的颜色*/
+  background:#aaa;
+  /* 设置元素旋转的基本点 */
+  transform-origin:50% 50%;
+  position: absolute;
+  top:380rpx;
+  margin:20rpx;
+  transform: rotate(-45deg);
+}
+.rengongzhineng{
+  flex:1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-left: 50%;
+}
+.rengongzhineng .rengongzhineng_title{
+  flex:1;
+  margin-right: 20%;
+  font-size: 45rpx;
+  font-weight: 400;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.rengongzhineng image{
+  flex:2;
+  width: 300rpx;
+  height: 300rpx;
+  margin-right: 10%;
+}

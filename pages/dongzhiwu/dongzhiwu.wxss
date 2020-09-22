@@ -1,0 +1,112 @@
+.tuijian{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+}
+.tuijian .tuijan_title{
+  flex:1;
+  font-size: 30rpx;
+  margin:20rpx 20rpx;
+  border-bottom: 1rpx dashed gray;
+}
+.tuijian .container navigator{
+  flex:5;
+  display: flex;
+  flex-wrap:wrap;
+  border-bottom: 1rpx solid gray;
+  margin-bottom: 10rpx;
+}
+.tuijian .container navigator .detail_text{
+  flex:3;
+  margin: 10rpx 20rpx;
+}
+.tuijian .container navigator .detail_text .title{
+  font-size: 32rpx;
+  font-weight: 800;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.tuijian .container navigator .detail_text text{
+  font-size: 28rpx;
+  display: -webkit-box;
+  /* 允许换行 */
+  white-space:normal;
+  /* 长字符运行换行显示 */
+  word-wrap: break-word;
+  /* 显示行数 */
+  -webkit-line-clamp: 3;
+  /* 垂直显示 */
+  -webkit-box-orient: vertical;
+  /* 超出部分隐藏 */
+  overflow: hidden;
+  /* 超出部分用'...'表示 */
+  text-overflow: ellipsis; 
+  line-height: 50rpx;
+}
+.tuijian .container navigator .imageposter{
+  flex:2;
+  margin-right: 5%;
+}
+.tuijian .container navigator .imageposter image{
+  margin:10rpx 15rpx;
+  height: 100%;
+  width: 100%;
+}
+/* 感兴趣 */
+.ganxingqu{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  margin-top: 50rpx;
+}
+.ganxingqu .ganxingqu_title{
+  flex:1;
+  font-size: 30rpx;
+  margin:20rpx 20rpx;
+  border-bottom: 1rpx dashed gray;
+}
+.ganxingqu .container navigator{
+  flex:5;
+  display: flex;
+  flex-wrap:wrap;
+  border-bottom: 1rpx solid gray;
+  margin-bottom: 10rpx;
+}
+.ganxingqu .container navigator .detail_text{
+  flex:3;
+  margin: 10rpx 20rpx;
+}
+.ganxingqu .container navigator .detail_text .title{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 32rpx;
+  font-weight: 800;
+}
+.ganxingqu .container navigator .detail_text text{
+  font-size: 28rpx;
+  display: -webkit-box;
+  /* 允许换行 */
+  white-space:normal;
+  /* 长字符运行换行显示 */
+  word-wrap: break-word;
+  /* 显示行数 */
+  -webkit-line-clamp: 3;
+  /* 垂直显示 */
+  -webkit-box-orient: vertical;
+  /* 超出部分隐藏 */
+  overflow: hidden;
+  /* 超出部分用'...'表示 */
+  text-overflow: ellipsis; 
+  line-height: 50rpx;
+}
+.ganxingqu .container navigator .imageposter{
+  flex:2;
+  margin-right: 5%;
+}
+.ganxingqu .container navigator .imageposter image{
+  margin:10rpx 15rpx;
+  height: 100rpx;
+  width: 250rpx;
+}

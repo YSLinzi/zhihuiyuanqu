@@ -1,0 +1,109 @@
+/**indexwxss**/ 
+.swiper-tab{ 
+  width: 100%; 
+  /* border-bottom: 2rpx solid #777777;  */
+  text-align: center; 
+  line-height: 80rpx;
+} 
+.swiper-tab-list{ 
+  font-size: 35rpx; 
+  display: inline-block; 
+  font-weight: 600;
+  width: 33%; 
+  color: #777777; 
+} 
+.on{ 
+  color: #4fdf45; 
+  border-bottom: 5rpx solid #4fdf45;
+} 
+ 
+.swiper-box{ 
+  display: block;
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden; 
+} 
+.swiper-box .lishi_list{ 
+  display: flex; 
+  flex-direction: column;
+} 
+.swiper-box .lishi_list image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500rpx;
+  width: 680rpx;
+  margin:20rpx 40rpx;
+}
+.swiper-box .kejiaohuodong{
+  margin-top: 10rpx;
+}
+.swiper-box .kejiaohuodong #left, #right{
+  width: 48%;
+  margin: 0 1%;
+  float: left;
+ }
+ .swiper-box .kejiaohuodong #left image, #right image{
+  width: 80%;
+  padding-top: 50rpx;
+  margin-left:10%;
+  margin-right: 10%;
+ }
+ .swiper-box .kejiaohuodong #left .text, #right .text{
+   margin-left: 20rpx;
+   margin-top: 0;
+   margin-bottom: 20rpx;
+   font-size: 30rpx;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .swiper-box .dongzhiwu {
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+ 
+.swiper-box .dongzhiwu .list-half {
+  width: 346rpx;
+  box-sizing: border-box;
+}
+.swiper-box .dongzhiwu .list-half .card {
+  background-color: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-bottom: 30rpx;
+  padding-bottom: 20rpx;
+}
+.swiper-box .dongzhiwu .list-half .card .card_content{
+  display: flex;
+  flex-direction: column;
+}
+.swiper-box .dongzhiwu .list-half .card .card_content image{
+  flex:4;
+  height: 150rpx;
+  width: 100%;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+.swiper-box .dongzhiwu .list-half .card .card_content .detail{
+  flex:3;
+  height: 100%;
+  width: 99.5%;
+  margin-top: -20rpx;
+  background-color: white;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  border:1rpx solid gray;
+  display: flex;
+}
+.swiper-box .dongzhiwu .list-half .card .card_content .detail text{
+  flex:1;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  font-weight: 800;
+}
+.swiper-box .dongzhiwu .list-half .card .card_content .detail navigator{
+  font-size: 30rpx;
+}

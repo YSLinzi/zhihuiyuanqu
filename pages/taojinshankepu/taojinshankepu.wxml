@@ -1,0 +1,60 @@
+<!--index.wxml--> 
+<view class="swiper-tab"> 
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">历史故事</view> 
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">动植物</view> 
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">科教活动</view> 
+</view> 
+ 
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange"> 
+  <!-- 历史故事 --> 
+  <swiper-item> 
+   <view class="lishi_list">
+    <image src="../assets/taojinshan-img/lishi_card1.png"></image>
+    <image src="../assets/taojinshan-img/list_card2.png"></image>
+   </view> 
+  </swiper-item> 
+  <!-- 动植物 --> 
+  <swiper-item> 
+    <view class="dongzhiwu">
+      <view class='list-half'>
+        <view wx:for="{{dongzhi_list}}" wx:key="index" wx:if="{{index%2 == 0}}" class='card'>
+          <view class="card_content">
+            <image src="{{item.imag}}" mode='widthFix'></image>
+            <view class="detail">
+              <text>{{item.title}}</text>
+              <navigator>详情》</navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='list-half'>
+        <view wx:for="{{dongzhi_list}}" wx:key="index" wx:if="{{index%2 != 0}}" class='card'>
+        <view class="card_content">
+            <image src="{{item.imag}}" mode='widthFix'></image>
+            <view class="detail">
+              <text>{{item.title}}</text>
+              <navigator>详情》</navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </swiper-item> 
+  <!-- 科教活动 --> 
+  <swiper-item> 
+   <view class="kejiaohuodong">
+    <view id="left">
+        <view wx:for="{{leftList}}" wx:key>
+          <image src="{{item.url}}" mode='widthFix'></image>
+          <view class="text">{{item.title}}</view>
+        </view>
+      </view>
+    <view id="right">
+      <view wx:for="{{rightList}}" wx:key>
+        <image src="{{item.url}}" mode='widthFix'></image>
+         <view class="text">{{item.title}}</view>
+      </view>
+    </view>
+    </view> 
+  </swiper-item> 
+</swiper> 

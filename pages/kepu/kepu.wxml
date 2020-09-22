@@ -1,0 +1,59 @@
+<!--pages/kepu/kepu.wxml-->
+<view class="master">
+  <view class="top">
+    <view class="lv-back">
+      <image src="../assets/images/kepu-topback.png"></image>
+      <view class="zhishiku">绿道知识库</view>
+    </view>
+    <!-- 绿道知识库开始 -->
+    <view class="mode">
+      <block>
+      <!-- 历史故事 动植物 科教活动 -->
+        <view class="card_list" wx:for="{{list}}" wx:key="index"  bindtap="dispath" data-msg='{{item}}'>
+          <image class="card_icon" src="{{item.img}}"></image>
+          <view class="title">{{item.content}}</view>
+        </view>
+      </block>
+    </view>
+  <!-- 卡片结束 -->
+  </view>
+
+  <view class="bottom">
+    <view class="guanyu-back">
+      <image src="../assets/images/kepu-botback.png"></image>
+      <view class="guanyuld">关于绿道</view>
+    </view>
+    <!-- 关于绿道开始 -->
+    <view class="bottom_mode">
+      <block wx:for="{{guanyulist}}" wx:key="index">
+      <!-- 我要提问 答题进阶 -->
+        <view class="card_list" bindtap="changepage" data-msg='{{item}}'>
+          <image class="card_icon" src="{{item.img}}"></image>
+          <view class="title">{{item.content}}</view>
+        </view>
+      </block>
+    </view>
+  <!-- 关于绿道结束 -->
+  </view>
+  <view class="bottom_caidan" bindtap="hideModel" wx:if="{{showModal}}">
+  <image src="../assets/icon/caidan.png"></image>
+  </view>
+</view>
+<!-- 屏幕背景变暗的背景 -->
+<view class="commodity_screen" wx:if="{{!showModal}}"></view>
+<!-- 弹出窗 -->
+<view class="commodity_attr_box" wx:if="{{!showModal}}">
+    <view class="cont_shan" bindtap="showModel">
+      <image class="close_btn" src="../assets/icon/close.png"></image>
+    </view>
+    <scroll-view scroll-y="true" style='height:500rpx'>
+      <view class="caidan_list">
+        <navigator wx:for="{{caidanlist}}" wx:key="index" url="{{item.url}}">
+          <view class="lvdao_icon">
+          <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+            <view class="lvdao_name">{{item.content}}</view>
+        </navigator>
+      </view> 
+    </scroll-view>
+</view>
