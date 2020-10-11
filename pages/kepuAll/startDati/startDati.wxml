@@ -1,0 +1,20 @@
+<!--pages/kepuAll/startDati/startDati.wxml-->
+<view class="timu">
+<scroll-view class="timu_title">
+  <view class="count">NO{{index+1}}</view>
+  <view class="title_detail">{{postList[index].name}}</view>
+  <!-- <view hidden="{{ny}}">{{postList[index].daan}}</view> -->
+</scroll-view>
+<view class="timu_option">
+  <view id='A' bindtap="btnOpClick" style="color: {{bcA}};">A.  {{postList[index].content[0]}}</view>
+  <view id='B' bindtap="btnOpClick" style="color: {{bcB}};">B.  {{postList[index].content[1]}}</view>
+  <view id='C' bindtap="btnOpClick" style="color: {{bcC}};">C.  {{postList[index].content[2]}}</view>
+  <view id='D' bindtap="btnOpClick" style="color: {{bcD}};">D.  {{postList[index].content[3]}}</view>
+</view>
+<view class="button_select">
+  <view bindtap="lastQuestion">上一题</view>
+  <view bindtap="nextQuestion">下一题</view>
+  <view bindtap="xianshi">显示答案</view>
+</view>
+</view>
+<text style="margin-left:20rpx">积分：每答对一题积1分，目前得分{{defen}}</text>

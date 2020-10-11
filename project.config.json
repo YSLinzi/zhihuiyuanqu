@@ -59,9 +59,9 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
-					"name": "趣味科普",
-					"pathName": "pages/kepu/kepu",
+					"id": 0,
+					"name": "pages/kepuAll/kepu/kepu",
+					"pathName": "pages/kepuAll/kepu/kepu",
 					"query": "",
 					"scene": null
 				},
@@ -73,16 +73,16 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 2,
 					"name": "历史故事",
-					"pathName": "pages/lishigushi/lishigushi",
+					"pathName": "pages/kepuAll/lishigushi/lishigushi",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 3,
 					"name": "动植物",
-					"pathName": "pages/dongzhiwu/dongzhiwu",
+					"pathName": "pages/kepuAll/dongzhiwu/dongzhiwu",
 					"query": "",
 					"scene": null
 				},
@@ -94,9 +94,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 5,
 					"name": "我要提问",
-					"pathName": "pages/woyaotiwen/woyaotiwen",
+					"pathName": "pages/kepuAll/woyaotiwen/woyaotiwen",
 					"query": "",
 					"scene": null
 				},
@@ -112,6 +112,26 @@
 					"name": "pages/map/map",
 					"pathName": "pages/map/map",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "答题进阶",
+					"pathName": "pages/kepuAll/datijinjie/datijinjie",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "开始答题",
+					"pathName": "pages/kepuAll/startDati/startDati",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "闯关成功",
+					"pathName": "pages/kepuAll/endDati/endDati",
 					"scene": null
 				}
 			]

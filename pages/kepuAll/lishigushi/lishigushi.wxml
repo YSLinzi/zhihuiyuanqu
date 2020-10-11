@@ -15,7 +15,7 @@
       </block>
       <block wx:else>
         <view class="videoposter" data-videoId='{{item.videoId}}' bindtap="play">
-          <image class="video_play_icon" src="../assets/icon/play.png"></image>
+          <image class="video_play_icon" src="../../assets/icon/play.png"></image>
           <image mode="widthFix" class="video-image" src="{{item.videoImg}}"></image>
         </view>
       </block>
@@ -41,7 +41,7 @@
       </block>
       <block wx:else>
         <view class="videoposter" data-videoId='{{item.videoId}}' bindtap="play">
-          <image class="video_play_icon" src="../assets/icon/play.png"></image>
+          <image class="video_play_icon" src="../../assets/icon/play.png"></image>
           <image mode="widthFix" class="video-image" src="{{item.videoImg}}"></image>
         </view>
       </block>

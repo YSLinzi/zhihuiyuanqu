@@ -11,15 +11,17 @@
     "pages/gonglue/travelNotes/travelNotes",
     "pages/gonglue/issuenote/issuenote",
     "pages/duotiaolvdao/duotiaolvdao",
-    "pages/kepu/kepu",
-    "pages/lishigushi/lishigushi",
-    "pages/dongzhiwu/dongzhiwu",
-    "pages/kejiao/kejiao",
-    "pages/woyaotiwen/woyaotiwen",
+
+    "pages/kepuAll/kepu/kepu",
+    "pages/kepuAll/lishigushi/lishigushi",
+    "pages/kepuAll/dongzhiwu/dongzhiwu",
+    "pages/kepuAll/woyaotiwen/woyaotiwen",
     "pages/taojinshankepu/taojinshankepu",
-    "pages/datijinjie/datijinjie",
-    "pages/map/map"
-    
+    "pages/kepuAll/datijinjie/datijinjie",
+    "pages/kepuAll/startDati/startDati",
+    "pages/kepuAll/endDati/endDati",
+    "pages/map/map",
+    "pages/kejiao/kejiao"
   ],
   "tabBar": {
     "color": "#bfbfbf",

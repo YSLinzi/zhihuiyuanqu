@@ -1,0 +1,8 @@
+<!--pages/datijinjie/datijinjie.wxml-->
+<view class="title">
+<text>10道关于绿道的小题目</text>
+<text>答对越多，积分越高</text>
+</view>
+<image src="../../assets/taojinshan-img/feiji.png" mode="widthFix" class="airplane"></image>
+<button class="start_dati" bindtap="handlestart">开始答题</button>
+<button class="jifen">积分兑换</button>
