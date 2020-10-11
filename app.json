@@ -4,10 +4,13 @@
     "navigationBarTextStyle": "black"
   },
   "pages": [
+    "pages/gonglue/daka/daka",
+    "pages/gonglue/topicNotes/topicNotes",
+    "pages/gonglue/tab/tab",
+    "pages/gonglue/dakaquan/dakaquan",
+    "pages/gonglue/travelNotes/travelNotes",
+    "pages/gonglue/issuenote/issuenote",
     "pages/duotiaolvdao/duotiaolvdao",
-    "pages/topicNotes/topicNotes",
-    "pages/travelNotes/travelNotes",
-    "pages/issuenote/issuenote",
     "pages/kepu/kepu",
     "pages/lishigushi/lishigushi",
     "pages/dongzhiwu/dongzhiwu",
@@ -15,7 +18,8 @@
     "pages/woyaotiwen/woyaotiwen",
     "pages/taojinshankepu/taojinshankepu",
     "pages/datijinjie/datijinjie",
-    "pages/map/map"
+    "pages/map/map",
+    
   ],
   "tabBar": {
     "color": "#bfbfbf",
