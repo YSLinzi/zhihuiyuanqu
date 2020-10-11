@@ -1,66 +1,21 @@
 /* pages/travelNotes/travelNotes.wxss */
-.tab{
-  display: flex;
-  margin-top: 10rpx;
-}
 
-.topic{
-  width:150rpx;
-  height: 90rpx;
-  margin-left: 20rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.topictext{
-  color: #979797;
-  font-size: 35rpx;
-}
+@import '../tab/tab.wxss';
 
-.hotnotes{
-  width:150rpx;
-  height: 90rpx;
-  margin-left: 20rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .hottext{
   margin-top: 8rpx; 
   color: #A6662F;
-  font-size: 35rpx;
+  font-size: 32rpx;
   padding-bottom:8rpx; 
   border-bottom: 1px solid #666666;
   font-weight: bold;
-}
-.select{
-  height: 40rpx;
-  width: 40rpx;
-  margin-top: 28rpx;
-}
-
-.btnissue{
-  width:180rpx;
-  height: 70rpx;
-  margin-top: 10rpx;
-  background-color:#F08A5D;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 15rpx;
-}
-.toissue{
-  color: #FFF;
-  font-size: 35rpx;
-  font-weight: bolder;
 }
 
 .waterfull{
   margin-left: 20rpx;
   margin-right: 20rpx;
   text-align: justify;
-  margin-top: 30rpx;
+  margin-top: 10rpx;
 }
 
 .left ,.right{
@@ -122,17 +77,31 @@
 
 .buttominfo{
   position: relative;
-  left: 250rpx;
-  width: 120rpx;
-  margin-top: 10rpx;
+  left: 255rpx;
+  width: 80rpx;
+  margin: 10rpx 2rpx;
 }
-.dislikeimg{
+
+.zanpart{
   width: 36rpx;
   height: 36rpx;
-  margin-top: 10rpx;
 }
+
+.zanimg{
+  width: 36rpx;
+  height: 36rpx;
+}
+
 .likenum{
   font-size: 30rpx;
-  margin-left: 5rpx;
-  margin-top: 10rpx;
+  margin: 3rpx 5rpx;
+  position: relative;
+  float: right;
 }
+.likenumtext{
+  font-size: 30rpx;
+  margin: 3rpx 5rpx;
+  position: relative;
+  float: right;
+}
+

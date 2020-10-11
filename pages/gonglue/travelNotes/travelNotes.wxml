@@ -1,16 +1,6 @@
 <!--pages/travelNotes/travelNotes.wxml-->
-<view class='tab'>
-<view class="topic" bindtap="totopicnotes">
-  <text class="topictext">主题攻略</text>
-</view>
-<view class="hotnotes" bindtap="totravelnotes">
-  <text class="hottext">热门游记</text>
-</view>
-<image class="select" src="/pages/assets/travel-img/select.png"></image>
-<view class='btnissue' bindtap="toissue">
-<text class="toissue">我要发布</text>
-</view> 
-</view>
+
+<include src='../tab/tab.wxml' />
 
 <view class="waterfull">
     <view  class="left">
@@ -35,7 +25,10 @@
     </view>
     <view class='line'></view>
     <view class="buttominfo">
-        <image class="dislikeimg" src="/pages/assets/travel-img/dislike.png"></image>
+        <view class='zanpart' bindtap='thumbsup' data-id='{{id}}'>
+          <image class="zanimg" hidden="{{state=='true'}}" src="/pages/assets/travel-img/dislike.png"></image> <!-- 点赞 -->
+          <image class="zanimg" hidden="{{state=='false'}}" src="/pages/assets/travel-img/like.png"></image><!-- 未点赞 -->
+      </view>
         <view class="likenum">
         <text class="likenumtext">{{likenum}}</text>
         </view>

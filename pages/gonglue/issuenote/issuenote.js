@@ -7,7 +7,7 @@ Page({
   data: {
 
   },
-  
+
   /*Editor部分*/
   getEditorValue(e) {
     this.setData({
@@ -50,6 +50,7 @@ Page({
     this.editorCtx.format(name, value)
   },
 
+
   insertImage() {
     const that = this
     wx.chooseImage({
@@ -69,6 +70,14 @@ Page({
       }
     })
   },
+  bindinput(e) {
+    console.log("输入了啥：", e);
+  },
+
+
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -136,16 +145,11 @@ Page({
     var _this = this;
     var that = this;
     wx.showActionSheet({
-      //itemList: ['从相册中选择', '拍照'],
       itemList: ['从相册中选择'],
       itemColor: "#00000",
       success: function (res) {
         if (!res.cancel) {
-          if (res.tapIndex == 0) {
             that.chooseWxImage_editor('album')
-          } else if (res.tapIndex == 1) {
-            that.chooseWxImage_editor('camera')
-          }
         }
       }
     })

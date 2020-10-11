@@ -1,0 +1,26 @@
+<!--pages/topicNotes/topicNotes.wxml-->
+
+<!-- 顶部选择栏 -->
+<include src='../tab/tab.wxml' />
+
+<view class="content">
+  <block wx:for="{{notes}}" wx:key="">
+  <template is="notesitem" data="{{...item}}"></template>
+</block>
+</view>
+
+<!-- 攻略模板定义 -->
+<template name="notesitem">
+  <view class='item-box'>
+    <image class="titleimg" src="{{titleimg}}" ></image>
+    <view class="titleArea">
+      <text class="title">{{titletext}}</text>
+       <view class='zanpart' bindtap='thumbsup' data-id='{{id}}'>
+        <image class="zanimg" hidden="{{state=='true'}}" src="/pages/assets/travel-img/dislike.png"></image> <!-- 点赞 -->
+        <image class="zanimg" hidden="{{state=='false'}}" src="/pages/assets/travel-img/like.png"></image><!-- 未点赞 -->
+      </view>
+      <!-- <image wx:if="{{post.collectionStatus}}" src="/pages/assets/travel-img/dislike.png"></image>
+      <image wx:else src="/pages/assets/travel-img/like.png"></image> -->
+    </view>
+  </view>
+</template>

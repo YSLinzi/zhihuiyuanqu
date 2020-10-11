@@ -1,0 +1,67 @@
+/* pages/gonglue/tab/tab.wxss */
+
+.tab{
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.topic{
+  width:150rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topictext{
+  color: #979797;
+  font-size: 32rpx;
+}
+
+.hotnotes{
+  width:150rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hottext{
+  color: #979797;
+  font-size: 32rpx;  
+}
+.select{
+  height: 35rpx;
+  width: 35rpx;
+  margin-top: 30rpx;
+}
+
+.daka{
+  width:150rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dakatext{
+  color: #979797;
+  font-size: 32rpx;  
+}
+
+.btnissue{
+  width:150rpx;
+  height: 70rpx;
+  margin-top: 10rpx;
+  background-color:#F08A5D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 25rpx;
+}
+.toissue{
+  color: #FFF;
+  font-size: 32rpx;
+  font-weight: bolder;
+}

@@ -1,0 +1,109 @@
+/* pages/gonglue/dakaquan/dakaquan.wxss */
+
+@import '../tab/tab.wxss';
+
+.dakatext{
+  margin-top: 8rpx;
+  color: #A6662F;
+  font-size: 32rpx;
+  padding-bottom:8rpx; 
+  border-bottom: 1px solid #666666;
+  font-weight: bold;
+}
+
+/* item-css */
+.item-box{
+  width: 690rpx;
+  margin: 30rpx;
+  margin-bottom: 40rpx;
+  margin-top: 10rpx;
+}
+
+.part1{
+  display: flex;
+  margin: 10rpx;
+}
+
+.userimg{
+    border-radius: 90rpx;
+    width: 80rpx;
+    height: 80rpx;
+}
+.username{
+  margin: 10rpx;
+}
+.nametext{
+  font-size: 28rpx;
+  color: #101010;
+}
+
+.dakaplace{
+  position: absolute;
+  right: 40rpx;
+  margin: 10rpx;
+}
+.place{
+  font-size: 28rpx;
+  color: #101010;
+}
+
+.part2{
+  display: flex;
+  flex-direction: column;
+  margin: 10rpx;
+  width: 100%;
+  height: auto;
+}
+
+.dakatextview{
+  margin: 5rpx;
+}
+
+.indakatext{
+  color: #101010;
+  font-size: 30rpx;
+}
+
+.photoview{
+  height: auto;
+}
+
+.photo{
+  width: 200rpx;
+  height: 100rpx;
+  margin: 5rpx;
+}
+
+.video-view{
+  height: 200rpx;
+  width: 98%;
+}
+
+.part3{
+  display: flex;
+  margin: 10rpx;
+  width: 100%;
+  height: 30rpx;
+}
+
+.datatime{
+  width: 200rpx;
+}
+
+.timetext{
+  font-size: 28rpx;
+  color: #C7C7CC;
+}
+
+.comment{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 60rpx;
+}
+
+.icon-com{
+  margin: 1%;
+  width: 98%;
+  height: 98%;
+}

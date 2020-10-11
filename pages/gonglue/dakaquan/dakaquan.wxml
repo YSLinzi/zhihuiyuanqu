@@ -1,0 +1,48 @@
+<!--pages/gonglue/dakaquan/dakaquan.wxml-->
+<!-- 顶部选择栏 -->
+<include src='../tab/tab.wxml' />
+
+<view class="content">
+  <block wx:for="{{daka}}" wx:key="">
+  <template is="dakaitem" data="{{...item}}"></template>
+</block>
+</view>
+
+
+<!-- 定义打卡组件模板 -->
+<template name="dakaitem">
+  <view class='item-box'>
+    <view class="part1">
+      <image class="userimg" src="{{userimg}}" ></image>
+      <view class="username">
+        <text class="nametext">{{username}}</text>
+      </view>
+      <view class="dakaplace">
+        <text class="place">打卡点：{{place}}</text>
+      </view>
+    </view>
+
+    <view class="part2">
+      <view class="dakatextview" wx:if="{{hastext}}">
+        <text class="indakatext">{{dakatext}}</text>
+      </view>
+      <view class="photo-view" wx:if="{{isphoto}}">
+        <block wx:for="{{photolist}}" wx:key="">
+          <image class="photo" src="{{item}}"></image>
+        </block>
+      </view>
+      <view class="video-view" wx:if="{{isvideo}}">
+        <video src="{{videourl}}" ></video>
+      </view>
+    </view>
+
+    <view class="part3">
+      <view class="dakatime">
+        <text class="timetext">{{timetext}}</text>
+      </view>
+      <view class="comment">
+        <image class="icon-com" src="../a-icon/com.png"></image>
+      </view>
+    </view>
+  </view>
+</template>
