@@ -18,7 +18,7 @@
     "pages/woyaotiwen/woyaotiwen",
     "pages/taojinshankepu/taojinshankepu",
     "pages/datijinjie/datijinjie",
-    "pages/map/map",
+    "pages/map/map"
     
   ],
   "tabBar": {
