@@ -8,14 +8,16 @@
     "pages/topicNotes/topicNotes",
     "pages/travelNotes/travelNotes",
     "pages/issuenote/issuenote",
-    "pages/kepu/kepu",
-    "pages/lishigushi/lishigushi",
-    "pages/dongzhiwu/dongzhiwu",
+    "pages/kepuAll/kepu/kepu",
+    "pages/kepuAll/lishigushi/lishigushi",
+    "pages/kepuAll/dongzhiwu/dongzhiwu",
     "pages/kejiao/kejiao",
-    "pages/woyaotiwen/woyaotiwen",
+    "pages/kepuAll/woyaotiwen/woyaotiwen",
     "pages/taojinshankepu/taojinshankepu",
-    "pages/datijinjie/datijinjie",
-    "pages/map/map"
+    "pages/kepuAll/datijinjie/datijinjie",
+    "pages/map/map",
+    "pages/kepuAll/startDati/startDati",
+    "pages/kepuAll/endDati/endDati"
   ],
   "tabBar": {
     "color": "#bfbfbf",

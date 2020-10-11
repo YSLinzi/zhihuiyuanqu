@@ -1,0 +1,69 @@
+/* pages/kepuAll/startDati/startDati.wxss */
+page{
+  background-color: rgb(160, 241, 152);
+  height: 100%;
+}
+.timu{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 90%;
+  margin:50rpx 30rpx;
+  border-radius: 40rpx;
+}
+
+.timu .timu_title{
+  flex:4;
+  margin-top: 20rpx;
+  margin-bottom:43rpx;
+  font-family: '微软雅黑';
+  border-bottom:2rpx dashed grey;
+}
+.timu .timu_title .count{
+  color:rgb(52, 187, 40);
+  font-size: 60rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+}
+.timu .timu_title .title_detail{
+  font-size: 50rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+}
+.timu .timu_option{
+  margin-left: 20rpx;
+  flex:6;
+  font-size: 35rpx;
+  display: flex;
+  flex-direction: column;
+}
+.timu .timu_option #A,#B,#C,#D{
+  margin: 30rpx 10rpx;
+  width: 80%;
+  border-color: white;
+  background-color: white;
+  border:0;
+}
+.timu .timu_option #A,#B,#C,#D::after {
+  border: 0; 
+}
+.timu .button_select{
+  flex:1;
+  display: flex;
+}
+.timu .button_select view{
+  flex:1;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 30rpx;
+  padding:20rpx 10rpx;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(41, 187, 89, 0.977);
+  margin-bottom: 40rpx;
+  color: white;
+}

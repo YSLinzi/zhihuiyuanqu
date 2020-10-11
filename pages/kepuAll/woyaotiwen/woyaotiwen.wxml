@@ -3,7 +3,7 @@
   <view class="describe">当您从Q&A里找不到所需的答案时，请描述您的问题，我们将尽快给予您答案并将您的问题上传到Q&A中。</view>
   <view class="locate_get">
     <view class="currentLocate">当前位置</view>
-    <image class="locate" src="../assets/icon/locate.svg" bindtap="handleAddressClick"></image>
+    <image class="locate" src="../../assets/icon/locate.svg" bindtap="handleAddressClick"></image>
     <view class="getLocate">{{address}}</view>
   </view>
   <!-- 您的问题 -->
@@ -27,7 +27,7 @@
     <view class="item" wx:for="{{imgs}}" wx:key="item">
       <image src="{{item}}" alt=""></image>
       <view class='delete' bindtap='deleteImg' data-index="{{index}}">
-        <image src="../assets/icon/close.png"></image>
+        <image src="../../assets/icon/close.png"></image>
       </view>
     </view>
     <view class="last-item" wx:if="{{imgs.length >= 3 ? false : true}}" bindtap="bindUpload">

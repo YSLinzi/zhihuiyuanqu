@@ -1,0 +1,207 @@
+.tuijian{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+}
+.tuijian .tuijan_title{
+  flex:1;
+  font-size: 30rpx;
+  margin:20rpx 20rpx;
+  border-bottom: 1rpx dashed gray;
+}
+.tuijian .container{
+  clear:both;
+  overflow: hidden;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+ .tuijian .container .recommend_item{
+    display: flex;
+    background:#fff;
+    margin-bottom: 20rpx;
+    border-radius: 5rpx;
+    width:336rpx;
+    min-height: 200rpx;
+    max-height: 300rpx;
+    position: relative;
+    border:2rpx solid#BEBEBE;
+  }
+  .tuijian .container .recommend_item .imageposter{
+    flex:3;
+    display: flex;
+    padding-right: 10rpx;
+  }
+  .tuijian .container .recommend_item .imageposter image{
+    width: 100%;
+    height: 100%;
+  }
+  .tuijian .container .recommend_item .detail_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    padding-left: 20rpx;
+    padding-right: 10rpx;
+  }
+  .commodity_attr_box{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    z-index: 10001;
+    top: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-top-left-radius: 20rpx;
+    border-top-right-radius: 20rpx;
+    border:2rpx solid gray;
+  }
+  .commodity_attr_box .detail_text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .commodity_attr_box .detail_text .title{
+    flex:1;
+    border-bottom: 2rpx solid grey;
+    font-size: 40rpx;
+    margin-top: 10rpx;
+    padding:0 20rpx;
+    display: flex;
+    align-items: center;
+  }
+  .commodity_attr_box .detail_text .title text{
+    padding-left: 20rpx;
+    flex:4;
+  }
+  .commodity_attr_box .detail_text .cont_shan{
+    flex:1;
+    display: flex;
+    justify-content:center;
+    align-items: right;
+  }
+  .commodity_attr_box .detail_text .desc{
+    flex:3;
+    font-size: 32rpx;
+    padding:10rpx;
+    margin-left: 10rpx;
+    margin-right:10rpx
+  }
+  .commodity_attr_box .detail_text .detail_Img{
+    width: 100%;
+    height: 100%;
+    flex:5;
+    padding-left: 30rpx;
+    padding-right: 10rpx;
+  }
+  .commodity_attr_box .detail_text .detail_Img image{
+    padding-bottom: 10rpx;
+    width: 90%;
+    height: 80%;
+  }
+/* .tuijian .container navigator{
+  flex:5;
+  display: flex;
+  flex-wrap:wrap;
+  border-bottom: 1rpx solid gray;
+  margin-bottom: 10rpx;
+}
+.tuijian .container navigator .detail_text{
+  flex:3;
+  margin: 10rpx 20rpx;
+}
+.tuijian .container navigator .detail_text .title{
+  font-size: 32rpx;
+  font-weight: 800;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.tuijian .container navigator .detail_text text{
+  font-size: 28rpx;
+  display: -webkit-box;
+   // 长字符运行换行显示
+  word-wrap: break-word;
+  //显示行数 
+  -webkit-line-clamp: 3;
+  // 垂直显示 
+  -webkit-box-orient: vertical;
+  // 超出部分隐藏 
+  overflow: hidden;
+  // 超出部分用'...'表示
+  text-overflow: ellipsis; 
+  line-height: 50rpx;
+  text-overflow: ellipsis; 
+  line-height: 50rpx;
+}
+.tuijian .container navigator .imageposter{
+  flex:2;
+  margin-right: 5%;
+}
+.tuijian .container navigator .imageposter image{
+  margin:10rpx 15rpx;
+  height: 100%;
+  width: 100%;
+}
+// 感兴趣/
+.ganxingqu{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  margin-top: 50rpx;
+}
+.ganxingqu .ganxingqu_title{
+  flex:1;
+  font-size: 30rpx;
+  margin:20rpx 20rpx;
+  border-bottom: 1rpx dashed gray;
+}
+.ganxingqu .container navigator{
+  flex:5;
+  display: flex;
+  flex-wrap:wrap;
+  border-bottom: 1rpx solid gray;
+  margin-bottom: 10rpx;
+}
+.ganxingqu .container navigator .detail_text{
+  flex:3;
+  margin: 10rpx 20rpx;
+}
+.ganxingqu .container navigator .detail_text .title{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 32rpx;
+  font-weight: 800;
+}
+.ganxingqu .container navigator .detail_text text{
+  font-size: 28rpx;
+  display: -webkit-box;
+  // 允许换行 
+  white-space:normal;
+ // 长字符运行换行显示
+  word-wrap: break-word;
+  //显示行数 
+  -webkit-line-clamp: 3;
+  // 垂直显示 
+  -webkit-box-orient: vertical;
+  // 超出部分隐藏 
+  overflow: hidden;
+  // 超出部分用'...'表示
+  text-overflow: ellipsis; 
+  line-height: 50rpx;
+}
+.ganxingqu .container navigator .imageposter{
+  flex:2;
+  margin-right: 5%;
+}
+.ganxingqu .container navigator .imageposter image{
+  margin:10rpx 15rpx;
+  height: 100rpx;
+  width: 250rpx;
+} */

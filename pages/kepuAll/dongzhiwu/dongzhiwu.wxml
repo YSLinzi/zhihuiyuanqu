@@ -1,0 +1,88 @@
+<!--pages/dongzhiwu/dongzhiwu.wxml-->
+<search></search>
+<view class="tuijian">
+  <!-- 文字提示推荐 -->
+  <view class="tuijan_title">根据您当前位置，为您推荐沿途动植物详情——</view>
+  <!-- 推荐内容 -->
+  <view class ="container">
+  <!-- 瀑布流的左边 -->
+   <view class="left">
+    <view wx:for="{{dongzhiwu}}" wx:key="index" data-msg='{{item}}' bindtap="showInfo">
+    <!-- 瀑布流左边内容 -->
+     <view class="recommend_item" wx:if="{{index%2==0}}" >
+       <!-- 图片 -->
+        <view class="imageposter">
+          <image class="dongzhiwu-image" src="{{item.Img}}"></image>
+        </view>
+        <!-- 文字 -->
+        <view class="detail_text">
+          <text class="title">{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+   </view>
+   <!-- 瀑布流的右边 -->
+   <view class="right">
+    <view wx:for="{{dongzhiwu}}" wx:key="index" data-msg='{{item}}' bindtap="showInfo">
+     <view name="m-recommend" class="recommend_item" wx:if="{{index%2==1}}" >
+        <!-- 图片 -->
+        <view class="imageposter">
+          <image class="dongzhiwu-image" src="{{item.Img}}"></image>
+        </view>
+        <!-- 文字 -->
+        <view class="detail_text">
+          <text class="title">{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+   </view>
+  </view>
+</view>
+<!-- 点击弹出浮窗 -->
+<view class="commodity_attr_box" wx:if="{{showModal}}">
+    <view class="detail_text">
+      <view class="title">
+        <text>{{scene_title}}</text>
+        <view class="cont_shan" bindtap="hideModel">
+          <image class="close_btn" style="width:50rpx; height:50rpx" src="../assets/icon/close.png"></image>
+        </view>
+      </view>
+      <view class="desc">{{desc_text}}</view>
+      <view class="detail_Img">
+      <image src="{{Img_url}}" mode="widthFix"></image>
+      </view>
+    </view>
+</view> 
+  <!-- <view class="container">
+    <navigator wx:for="{{dongzhiwu}}" wx:for-item="item">
+       //文字 
+      <view class="detail_text">
+        <text class="title">{{item.title}}</text>
+        <text class="detail">{{item.detail}}</text>
+      </view>
+      //图片
+      <view class="imageposter">
+        <image mode="widthFix" class="dongzhiwu-image" src="{{item.Img}}"></image>
+      </view>
+    </navigator>
+  </view> -->
+
+<!-- 感兴趣 -->
+<!-- <view class="ganxingqu">
+  文字提示感兴趣 
+  <view class="ganxingqu_title">您可能感兴趣的动植物详情——</view>
+   推荐内容
+  <view class="container">
+    <navigator wx:for="{{interest}}" wx:for-item="item">
+       文字 
+      <view class="detail_text">
+        <text class="title">{{item.title}}</text>
+        <text class="detail">{{item.detail}}</text>
+      </view>
+    图片 
+      <view class="imageposter">
+        <image mode="widthFix" class="dongzhiwu-image" src="{{item.Img}}"></image>
+      </view>
+    </navigator>
+  </view>
+</view> -->
