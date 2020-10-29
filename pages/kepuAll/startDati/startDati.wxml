@@ -2,14 +2,14 @@
 <view class="timu">
 <scroll-view class="timu_title">
   <view class="count">NO{{index+1}}</view>
-  <view class="title_detail">{{postList[index].name}}</view>
+  <view class="title_detail">{{postList[index].question}}</view>
   <!-- <view hidden="{{ny}}">{{postList[index].daan}}</view> -->
 </scroll-view>
 <view class="timu_option">
-  <view id='A' bindtap="btnOpClick" style="color: {{bcA}};">A.  {{postList[index].content[0]}}</view>
-  <view id='B' bindtap="btnOpClick" style="color: {{bcB}};">B.  {{postList[index].content[1]}}</view>
-  <view id='C' bindtap="btnOpClick" style="color: {{bcC}};">C.  {{postList[index].content[2]}}</view>
-  <view id='D' bindtap="btnOpClick" style="color: {{bcD}};">D.  {{postList[index].content[3]}}</view>
+  <view id='A' bindtap="btnOpClick" style="color: {{bcA}};">A.  {{options[0]}}</view>
+  <view id='B' bindtap="btnOpClick" style="color: {{bcB}};">B.  {{options[1]}}</view>
+  <view id='C' bindtap="btnOpClick" style="color: {{bcC}};">C.  {{options[2]}}</view>
+  <view id='D' bindtap="btnOpClick" style="color: {{bcD}};">D.  {{options[3]}}</view>
 </view>
 <view class="button_select">
   <view bindtap="lastQuestion">上一题</view>

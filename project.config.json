@@ -6,6 +6,7 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
+		"enhance": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
@@ -21,8 +22,7 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		},
-		"enhance": true
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.12.0",
@@ -132,6 +132,20 @@
 					"id": -1,
 					"name": "闯关成功",
 					"pathName": "pages/kepuAll/endDati/endDati",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "打卡",
+					"pathName": "pages/gonglue/daka/daka",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "打卡圈",
+					"pathName": "pages/gonglue/dakaquan/dakaquan",
 					"scene": null
 				}
 			]
