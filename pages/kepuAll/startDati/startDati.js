@@ -5,7 +5,7 @@ Page({
     // text:"这是一个页面"
     postList: postData.postList,
     index:0,
-    bc_default: 'white',
+    bc_default: 'black',
     bc_right: '#f37c2b',
     bc_wrong: '#d81e06',
     bcA: '',

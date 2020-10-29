@@ -1,0 +1,133 @@
+/* pages/gonglue/daka/daka.wxss */
+
+#part1{
+  margin: 5rpx;
+  height: 600rpx;
+}
+
+#mydaka{
+  margin: 20rpx;
+  margin-bottom: 5rpx;
+  height: 540rpx;
+}
+
+.placeholdertext{
+  font-size: 32rpx;
+}
+
+#maxwordview{
+  position: absolute;
+  right: 30rpx;
+}
+
+#maxwordtext{
+  font-size: 24rpx;
+  color: #BBBBBB;
+}
+
+.line{
+  height: 2rpx;
+  width: 94%;
+  border-bottom: 2rpx solid #BBBBBB;
+  margin-left: 3%; 
+}
+
+.menu{
+  display: flex;
+  width: 90%;
+  margin: 3% 5%;
+}
+
+.icon{
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.menutext{
+  color: #888181;
+  font-size: 28rpx;
+  margin-left: 25rpx;
+}
+
+#righticon{
+  position: absolute;
+  right: 30rpx;
+}
+
+#dizhitext{
+  position: absolute;
+  right: 30rpx;
+  font-size: 28rpx;
+}
+
+#timetext{
+  position: absolute;
+  right: 30rpx;
+  font-size: 28rpx;
+}
+
+
+/*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  height: 400rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+  border-radius: 50rpx 50rpx 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#titleview{
+  margin-top: 10rpx;
+  margin-left: 32%;
+  justify-content: center;
+  align-content: center;
+}
+
+#titletext{
+  font-size: 34rpx;
+  color: #101010;
+}
+
+#titlemsgview{
+  margin-left: 10%;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20rpx;
+}
+
+#titlemsg{
+  font-size: 30rpx;
+  color: #929090;
+}
+
+.ph-vio-view{
+  height: 80rpx;
+  margin: 30rpx;
+  margin-bottom: 0;
+}
+
+.pho-vi-text{
+  margin-left: 5%;
+  font-size: 34rpx;
+
+}

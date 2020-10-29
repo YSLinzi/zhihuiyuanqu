@@ -1,0 +1,49 @@
+<!--pages/gonglue/daka/daka.wxml-->
+<view id="content">
+  <view id="part1">
+  <textarea id="mydaka" placeholder="快写下你的感受吧！" placeholder-class=placeholdertext" 
+  bindinput="textinput" maxlength="200"></textarea>
+  <view id="maxwordview"><text id="maxwordtext">{{wordnum}}/200</text></view>
+  </view>
+
+  <view id="part2">
+      <view class='line'></view>
+      <view class="menu" id="pho-video" bindtap="choosemedia">
+        <image class="icon" id="addicon" src="../a-icon/add.png"></image>
+        <text class="menutext">上传图片或视频</text>
+        <view id="right"><image class="icon" id="righticon" src="../a-icon/right.png"></image></view>
+        <!--  底部弹出框  -->
+        <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+        <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+          <view id="titleview"><text id="titletext">上传图片或视频</text></view> 
+          <view id="titlemsgview"><text id="titlemsg">（优秀的图片或短视频将用于绿道宣传展示）</text></view> 
+          <view class='line'></view>
+          <view class="ph-vio-view"><text class="pho-vi-text">图片</text></view>
+          <view class='line'></view>
+          <view class="ph-vio-view"><text class="pho-vi-text">视频</text></view>
+        </view>
+      </view>
+      <view class='line'></view>
+      <view class="menu" id="dizhi">
+        <image class="icon" id="dizhiicon" src="../a-icon/dizhi.png"></image>
+        <text class="menutext">当前位置</text>
+        <text id="dizhitext">深圳市南山区</text>
+      </view>
+      <view class='line'></view>
+      <view class="menu" id="sendtime">
+        <image class="icon" id="timeicon" src="../a-icon/time.png"></image>
+        <text class="menutext">发送时间</text>
+        <text id="timetext">立即发送</text>
+      </view>
+      <view class='line'></view>
+      <view class="menu" id="share">
+        <image class="icon" id="shareicon" src="../a-icon/share.png"></image>
+        <text class="menutext">更多分享</text>
+        <image class="icon" id="righticon" src="../a-icon/right.png"></image>
+      </view>
+      <view class='line'></view>
+  </view>
+</view>
+ 
+
+  
