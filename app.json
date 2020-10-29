@@ -4,13 +4,15 @@
     "navigationBarTextStyle": "black"
   },
   "pages": [
+    
+    "pages/duotiaolvdao/duotiaolvdao",
+
     "pages/gonglue/daka/daka",
-    "pages/gonglue/topicNotes/topicNotes",
+    "pages/gonglue/issuenote/issuenote",
     "pages/gonglue/tab/tab",
     "pages/gonglue/dakaquan/dakaquan",
     "pages/gonglue/travelNotes/travelNotes",
-    "pages/gonglue/issuenote/issuenote",
-    "pages/duotiaolvdao/duotiaolvdao",
+    "pages/gonglue/topicNotes/topicNotes",
 
     "pages/kepuAll/kepu/kepu",
     "pages/kepuAll/lishigushi/lishigushi",

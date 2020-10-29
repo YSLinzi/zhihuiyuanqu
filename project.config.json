@@ -66,13 +66,6 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "攻略",
-					"pathName": "pages/travelNotes/travelNotes",
-					"query": "",
-					"scene": null
-				},
-				{
 					"id": 2,
 					"name": "历史故事",
 					"pathName": "pages/kepuAll/lishigushi/lishigushi",
@@ -132,6 +125,14 @@
 					"id": -1,
 					"name": "闯关成功",
 					"pathName": "pages/kepuAll/endDati/endDati",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/map/map",
+					"pathName": "pages/map/map",
+					"query": "",
 					"scene": null
 				}
 			]

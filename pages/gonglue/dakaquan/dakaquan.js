@@ -1,6 +1,5 @@
 // pages/gonglue/dakaquan/dakaquan.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -11,12 +10,12 @@ Page({
         hastext: true,
         isphoto: true,
         isvideo: false,
-        userimg: '/pages/assets/travel-img/dashahe.png',
-        username: '王宽',
+        userimg: '/pages/assets/travel-img/binhai.png',
+        username: '小明',
         place: '紫薇亭',
         timetext: '2020/09/27 12:05:06',
-        dakatext: "秋日浪漫，邀您共赏",
-        photolist: ['/pages/assets/travel-img/dashahe.png', '/pages/assets/travel-img/dashahe.png'],
+        dakatext: "共游淘金山绿道",
+        photolist: ['/pages/assets/travel-img/dashahe.png', '/pages/assets/travel-img/binhai2.png'],
         videourl: '',
       },
       {
@@ -25,10 +24,10 @@ Page({
         isphoto: true,
         isvideo: false,
         userimg: '/pages/assets/travel-img/dashahe.png',
-        username: '王宽',
+        username: '小红',
         place: '紫薇亭',
         timetext: '2020/09/27 12:05:06',
-        dakatext: "秋日浪漫，邀您共赏",
+        dakatext: "打卡淘金山",
         photolist: ['/pages/assets/travel-img/dashahe.png', '/pages/assets/travel-img/dashahe.png'],
         videourl: '',
       },
@@ -61,7 +60,7 @@ Page({
   },
   toissue: function (e) {
     wx.navigateTo({
-      url: '../../issuenote/issuenote',
+      url: '../daka/daka',
     })
   },
   todakaquan: function (e) {

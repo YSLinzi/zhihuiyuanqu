@@ -1,23 +1,37 @@
 <!--pages/topicNotes/topicNotes.wxml-->
 
 <!-- 顶部选择栏 -->
-<include src='../tab/tab.wxml' />
+<search class='search'></search>
+<view class='tab'>
+  <view class="topic" bindtap="totopicnotes">
+    <text class="topictext">主题攻略</text>
+  </view>
+  <view class="hotnotes" bindtap="totravelnotes">
+    <text class="hottext">热门游记</text>
+  </view>
+  <image class="select" src="/pages/assets/travel-img/select.png"></image>
+  <view class="daka" bindtap="todakaquan">
+    <text class="dakatext">打卡圈子</text>
+  </view>
+</view>
 
 <view class="content">
   <block wx:for="{{notes}}" wx:key="">
-  <template is="notesitem" data="{{...item}}"></template>
-</block>
+    <template is="notesitem" data="{{...item}}"></template>
+  </block>
 </view>
 
 <!-- 攻略模板定义 -->
 <template name="notesitem">
   <view class='item-box'>
-    <image class="titleimg" src="{{titleimg}}" ></image>
+    <image class="titleimg" src="{{titleimg}}"></image>
     <view class="titleArea">
       <text class="title">{{titletext}}</text>
-       <view class='zanpart' bindtap='thumbsup' data-id='{{id}}'>
-        <image class="zanimg" hidden="{{state=='true'}}" src="/pages/assets/travel-img/dislike.png"></image> <!-- 点赞 -->
-        <image class="zanimg" hidden="{{state=='false'}}" src="/pages/assets/travel-img/like.png"></image><!-- 未点赞 -->
+      <view class='zanpart' bindtap='thumbsup' data-id='{{id}}'>
+        <image class="zanimg" hidden="{{state=='true'}}" src="/pages/assets/travel-img/dislike.png"></image>
+        <!-- 点赞 -->
+        <image class="zanimg" hidden="{{state=='false'}}" src="/pages/assets/travel-img/like.png"></image>
+        <!-- 未点赞 -->
       </view>
       <!-- <image wx:if="{{post.collectionStatus}}" src="/pages/assets/travel-img/dislike.png"></image>
       <image wx:else src="/pages/assets/travel-img/like.png"></image> -->

@@ -41,7 +41,7 @@ Page({
   },
   toissue: function (e) {
     wx.navigateTo({
-      url: '../../issuenote/issuenote',
+      url: '../issuenote/issuenote',
     })
   },
   todakaquan: function(e){
