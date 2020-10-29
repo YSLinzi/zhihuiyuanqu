@@ -6,6 +6,7 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
+		"enhance": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
@@ -21,8 +22,7 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		},
-		"enhance": true
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.12.0",
@@ -133,6 +133,18 @@
 					"name": "pages/map/map",
 					"pathName": "pages/map/map",
 					"query": "",
+          "scene": null
+        },
+        {
+					"name": "打卡",
+					"pathName": "pages/gonglue/daka/daka",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "打卡圈",
+					"pathName": "pages/gonglue/dakaquan/dakaquan",
 					"scene": null
 				}
 			]

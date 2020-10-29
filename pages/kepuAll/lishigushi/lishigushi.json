@@ -2,5 +2,5 @@
   "usingComponents": {
     "search":"/components/search/search"
   },
-  "navigationBarTitleText": "历史故事"
+  "navigationBarTitleText": "人文历史"
 }

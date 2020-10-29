@@ -44,7 +44,7 @@
       <view class="title">
         <text>{{scene_title}}</text>
         <view class="cont_shan" bindtap="hideModel">
-          <image class="close_btn" style="width:50rpx; height:50rpx" src="../assets/icon/close.png"></image>
+          <image class="close_btn" style="width:50rpx; height:50rpx" src="../../assets/icon/close.png"></image>
         </view>
       </view>
       <view class="desc">{{desc_text}}</view>
