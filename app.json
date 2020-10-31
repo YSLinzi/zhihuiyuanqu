@@ -35,6 +35,12 @@
       },
       {
         "pagePath": "pages/duotiaolvdao/duotiaolvdao",
+        "iconPath": "./pages/assets/icon/faxian.png",
+        "selectedIconPath": "./pages/assets/icon/faxian_xuanzhong.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/duotiaolvdao/duotiaolvdao",
         "iconPath": "./pages/assets/icon/wode_weixuan.png",
         "selectedIconPath": "./pages/assets/icon/wode_yixuan.png",
         "text": "我的"
