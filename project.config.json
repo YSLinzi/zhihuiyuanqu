@@ -1,153 +1,84 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
-	"setting": {
-		"urlCheck": false,
-		"es6": true,
-		"enhance": true,
-		"postcss": true,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.12.0",
-	"appid": "wx236e4f25b1b7a3ae",
-	"projectname": "lvdao",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": false,
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": [
-				{
-					"id": 0,
-					"name": "pages/kepuAll/kepu/kepu",
-					"pathName": "pages/kepuAll/kepu/kepu",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 2,
-					"name": "历史故事",
-					"pathName": "pages/kepuAll/lishigushi/lishigushi",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 3,
-					"name": "动植物",
-					"pathName": "pages/kepuAll/dongzhiwu/dongzhiwu",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 4,
-					"name": "科教活动",
-					"pathName": "pages/kejiao/kejiao",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 5,
-					"name": "我要提问",
-					"pathName": "pages/kepuAll/woyaotiwen/woyaotiwen",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "淘金山科普",
-					"pathName": "pages/taojinshankepu/taojinshankepu",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 7,
-					"name": "pages/map/map",
-					"pathName": "pages/map/map",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 8,
-					"name": "答题进阶",
-					"pathName": "pages/kepuAll/datijinjie/datijinjie",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "开始答题",
-					"pathName": "pages/kepuAll/startDati/startDati",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "闯关成功",
-					"pathName": "pages/kepuAll/endDati/endDati",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/map/map",
-					"pathName": "pages/map/map",
-					"query": "",
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.12.0",
+  "appid": "wx236e4f25b1b7a3ae",
+  "projectname": "lvdao",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "topicNotes",
+          "pathName": "pages/gonglue/topicNotes/topicNotes",
+          "query": "",
           "scene": null
         },
         {
-					"name": "打卡",
-					"pathName": "pages/gonglue/daka/daka",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "打卡圈",
-					"pathName": "pages/gonglue/dakaquan/dakaquan",
-					"scene": null
-				}
-			]
-		}
-	}
+          "name": "travelNotes",
+          "pathName": "pages/gonglue/travelNotes/travelNotes",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "daka",
+          "pathName": "pages/gonglue/daka/daka",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "article",
+          "pathName": "pages/gonglue/article/article",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

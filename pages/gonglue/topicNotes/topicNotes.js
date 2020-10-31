@@ -5,9 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    inputShowed: false,/* 两个变量用于搜索 */
+    inputVal: "",
     notes: [
       {
-        id: 1,
+        id: "cdsknclkvnkwslc1",
         state: 'false',
         titleimg: '/pages/assets/travel-img/dashahe.png',
         titletext: "秋日浪漫，邀您共赏"
@@ -48,6 +50,14 @@ Page({
     wx.redirectTo({
       url: '../dakaquan/dakaquan',
     })
+  },
+
+  //文章内容函数
+  getcontent:function(e){
+    var shareid = e.currentTarget.dataset.id;
+    wx.redirectTo({
+      url: '../article/article?id=' + JSON.stringify(shareid),
+    });
   },
 
   // 点赞功能函数
@@ -116,8 +126,22 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      search: this.search.bind(this)
+  })
   },
+
+  search: function (value) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
+        }, 200)
+    })
+},
+selectResult: function (e) {
+    console.log('select result', e.detail)
+},
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

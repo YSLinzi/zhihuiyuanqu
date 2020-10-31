@@ -1,5 +1,6 @@
 <!--pages/travelNotes/travelNotes.wxml-->
 
+<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
 <include src='../tab/tab.wxml' />
 
 <view class="waterfull">

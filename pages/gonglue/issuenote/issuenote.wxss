@@ -1,6 +1,5 @@
 /* pages/issuenote/issuenote.wxss */
-@import "/common/lib/weui.wxss";
-@import "/editor/assets/iconfont.wxss";
+@import "/assets/iconfont.wxss";
  
 .wrapper {
   padding: 5px;

@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "我要发布",
   "navigationBarBackgroundColor": "#F8F8F8",
-  "usingComponents": {}
+  "usingComponents": {},
+  "disableScroll": true
 }

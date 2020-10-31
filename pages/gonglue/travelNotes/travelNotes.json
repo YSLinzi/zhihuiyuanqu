@@ -2,6 +2,6 @@
   "navigationBarTitleText": "攻 略",
   "navigationBarBackgroundColor": "#F8F8F8",
   "usingComponents": {
-    "search": "/components/search/search"
+    "mp-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar"
   }
 }

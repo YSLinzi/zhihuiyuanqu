@@ -1,6 +1,6 @@
 <!--pages/gonglue/dakaquan/dakaquan.wxml-->
 <!-- 顶部选择栏 -->
-<search class='search'></search>
+<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
 
 <view class='tab'>
 <view class="topic" bindtap="totopicnotes">

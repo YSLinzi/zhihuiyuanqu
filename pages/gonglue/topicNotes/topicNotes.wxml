@@ -1,7 +1,7 @@
 <!--pages/topicNotes/topicNotes.wxml-->
 
 <!-- 顶部选择栏 -->
-<search class='search'></search>
+<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
 <view class='tab'>
   <view class="topic" bindtap="totopicnotes">
     <text class="topictext">主题攻略</text>
@@ -24,7 +24,7 @@
 <!-- 攻略模板定义 -->
 <template name="notesitem">
   <view class='item-box'>
-    <image class="titleimg" src="{{titleimg}}"></image>
+    <image class="titleimg" bindtap="getcontent" data-id="{{id}}" src="{{titleimg}}"></image>
     <view class="titleArea">
       <text class="title">{{titletext}}</text>
       <view class='zanpart' bindtap='thumbsup' data-id='{{id}}'>
@@ -33,8 +33,6 @@
         <image class="zanimg" hidden="{{state=='false'}}" src="/pages/assets/travel-img/like.png"></image>
         <!-- 未点赞 -->
       </view>
-      <!-- <image wx:if="{{post.collectionStatus}}" src="/pages/assets/travel-img/dislike.png"></image>
-      <image wx:else src="/pages/assets/travel-img/like.png"></image> -->
     </view>
   </view>
 </template>

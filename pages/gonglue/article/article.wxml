@@ -1,0 +1,13 @@
+<!--pages/gonglue/article/article.wxml-->
+<view class="container">
+  <view class="title" style="font-weight:bolder;font-size:50rpx;margin:30rpx;">
+    <text class="titletext">{{articleTitle}}</text>
+    <image class="like" wx:if="{{state=='false'}}" bindtap='zan' src='/pages/assets/travel-img/dislike.png'></image>
+    <image class="like" wx:else bindtap='zan' src='/pages/assets/travel-img/like.png'></image>
+    <image class="share" src="../a-icon/share1.png"></image>
+  </view>
+  <view class='line'></view>
+  <view class="body">
+      <rich-text nodes="{{htmlSnip}}"></rich-text>
+  </view>
+</view>

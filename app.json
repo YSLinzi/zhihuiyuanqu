@@ -4,16 +4,13 @@
     "navigationBarTextStyle": "black"
   },
   "pages": [
-    
     "pages/duotiaolvdao/duotiaolvdao",
-
     "pages/gonglue/daka/daka",
     "pages/gonglue/issuenote/issuenote",
     "pages/gonglue/tab/tab",
     "pages/gonglue/dakaquan/dakaquan",
     "pages/gonglue/travelNotes/travelNotes",
     "pages/gonglue/topicNotes/topicNotes",
-
     "pages/kepuAll/kepu/kepu",
     "pages/kepuAll/lishigushi/lishigushi",
     "pages/kepuAll/dongzhiwu/dongzhiwu",
@@ -23,7 +20,8 @@
     "pages/kepuAll/startDati/startDati",
     "pages/kepuAll/endDati/endDati",
     "pages/map/map",
-    "pages/kejiao/kejiao"
+    "pages/kejiao/kejiao",
+    "pages/gonglue/article/article"
   ],
   "tabBar": {
     "color": "#bfbfbf",
@@ -42,6 +40,10 @@
         "text": "我的"
       }
     ]
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
   },
   "sitemapLocation": "sitemap.json",
   "permission": {
