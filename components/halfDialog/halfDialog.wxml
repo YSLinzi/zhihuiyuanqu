@@ -1,0 +1,18 @@
+<!-- 薪资单位选择框 -->
+<view class="modal">
+  <view class="back {{isShow? 'active' : ''}}"></view>
+  <view class="content {{isShow ? 'active' : ''}}">
+    <view class="modal-title">
+      <view class="list-title">薪资单位</view>
+      <view class="btns">
+        <text bindtap="handleClose">取消</text>
+        <text bindtap="handleClose">确定</text>
+      </view>
+    </view>
+    <picker-view bindchange="handleSalaryChange" class="my-picker">
+      <picker-view-column>
+        <view wx:for="{{salaryList}}" wx:key="*this" style="text-align: center;">{{item.key}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>

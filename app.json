@@ -21,7 +21,10 @@
     "pages/kepuAll/endDati/endDati",
     "pages/map/map",
     "pages/kejiao/kejiao",
-    "pages/gonglue/article/article"
+    "pages/gonglue/article/article",
+    "pages/huodong/huodongzonglan/huodongzonglan",
+    "pages/huodong/content/content",
+    "pages/huodong/baoming/baoming"
   ],
   "tabBar": {
     "color": "#bfbfbf",

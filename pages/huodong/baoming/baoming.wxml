@@ -1,0 +1,36 @@
+<!--pages/huodong/baoming/baoming.wxml-->
+<mp-toptips msg="{{errormsg}}" type="error" show="{{error=='true'}}"></mp-toptips>
+<view class="container">
+  <view class="header">
+    <image class="actimg" src="{{actImgurl}}"></image>
+    <view class="actinfo">
+      <text class="title">{{acttitle}}</text>
+      <text class="thetime">开始时间：{{starttime}}</text>
+      <text class="thetime">结束时间：{{endtime}}</text>
+    </view>
+  </view>
+
+  <view class="detail" wx:if="{{actclass}}=='inner'">
+    <view class="hang">
+      <text class="hangtitle">预约者姓名：</text>
+      <input bindinput="changename" class="inp" placeholder="请填入真实姓名" placeholder-class="holder" />
+    </view>
+    <view class="hang">
+      <text class="hangtitle">预约时间：</text>
+      <picker mode="date" value="{{date}}" start="{{today}}" end="{{endtime}}" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="hang">
+      <text class="hangtitle">联系电话：</text>
+      <input bindinput="changephonenumber" class="inp" placeholder="请填入电话" placeholder-class="holder" type="number"
+        maxlength="11" />
+    </view>
+    <button bindtap="sendform" class="okbtn" type="primary">确认报名</button>
+  </view>
+
+
+
+</view>

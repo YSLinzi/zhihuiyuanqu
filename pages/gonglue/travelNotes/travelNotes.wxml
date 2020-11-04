@@ -4,35 +4,37 @@
 <include src='../tab/tab.wxml' />
 
 <view class="waterfull">
-    <view  class="left">
-      <block  wx:for="{{water}}" wx:key="">
-          <template is="wateritem" data="{{...item}}" wx:if="{{index%2==1}}"></template>
-        </block>
-    </view>
-    <view  class="right">
-        <block class="right" wx:for="{{water}}" wx:key="">
-          <template is="wateritem" data="{{...item}}" wx:if="{{index%2==0}}"></template>
-        </block>
-    </view>
+  <view class="left">
+    <block wx:for="{{water}}" wx:key="">
+      <template is="wateritem" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+    </block>
+  </view>
+  <view class="right">
+    <block class="right" wx:for="{{water}}" wx:key="">
+      <template is="wateritem" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+    </block>
+  </view>
 </view>
 
 
 <!-- 定义瀑布组件模板 -->
 <template name="wateritem">
   <view class='item-box'>
-    <image class="titleimg" src="{{titleimg}}" mode="widthFix" ></image>
-    <view class="titleArea">
-      <text class="title">{{titletext}}</text>
+    <view bindtap="getcontent" data-id="{{id}}">
+      <image class="titleimg" src="{{titleimg}}" mode="widthFix"></image>
+      <view class="titleArea">
+        <text class="title">{{titletext}}</text>
+      </view>
     </view>
     <view class='line'></view>
     <view class="buttominfo">
-        <view class='zanpart' bindtap='thumbsup' data-id='{{id}}'>
-          <image class="zanimg" hidden="{{state=='true'}}" src="/pages/assets/travel-img/dislike.png"></image> <!-- 点赞 -->
-          <image class="zanimg" hidden="{{state=='false'}}" src="/pages/assets/travel-img/like.png"></image><!-- 未点赞 -->
+      <view class='zanpart' bindtap='thumbsup' data-id='{{id}}'>
+        <image class="zanimg" hidden="{{state=='true'}}" src="/pages/assets/travel-img/dislike.png"></image> <!-- 点赞 -->
+        <image class="zanimg" hidden="{{state=='false'}}" src="/pages/assets/travel-img/like.png"></image><!-- 未点赞 -->
       </view>
-        <view class="likenum">
+      <view class="likenum">
         <text class="likenumtext">{{likenum}}</text>
-        </view>
+      </view>
     </view>
   </view>
 </template>

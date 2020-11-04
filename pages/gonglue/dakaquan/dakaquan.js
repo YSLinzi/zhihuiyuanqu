@@ -47,7 +47,23 @@ Page({
         videourl: '',
       },
     ], //旅游信息合集
+
+    show: false,
+
   },
+
+  handleClick() {
+    this.setData({
+      show: !this.data.show
+    })
+  },
+
+  open: function () {
+    this.setData({
+        show: true
+    })
+},
+
 
   // 关于页面跳转函数
   totopicnotes: function (e) {

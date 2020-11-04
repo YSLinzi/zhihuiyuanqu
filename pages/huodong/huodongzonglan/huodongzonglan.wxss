@@ -1,0 +1,146 @@
+/* pages/huodong/huodongzonglan/huodongzonglan.wxss */
+
+.weui-search-bar{
+  width: 300rpx;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 30rpx;
+  top: 14rpx;
+}
+.weui-search-bar__form {
+  margin: 0;
+  border: 1rpx solid #b0b0b0;
+  width: 240rpx;
+  height: 46%;
+}
+
+.weui-search-bar__box{
+  width: 80%;
+  height: 80%;
+}
+.weui-search-bar__input{
+  height: 40%;
+}
+
+.weui-search-bar__text{
+  font-size: 24rpx;
+}
+.weui-search-bar__box .weui-icon-search {
+  position: absolute;
+    top: 50%;
+    left: 8px;
+    margin-top: -8px;
+}
+.weui-search-bar__box .weui-search-bar__input {
+  padding: 0;
+  width: 200rpx;
+  height: 1.14285714em;
+  border: 0;
+  font-size: 22rpx;
+  line-height: 1.14285714em;
+  box-sizing: content-box;
+  background: transparent;
+  caret-color: var(--weui-BRAND);
+  color: var(--weui-FG-0);
+}
+.weui-search-bar__cancel-btn {
+  font-size: 24rpx;
+}
+.weui-search-bar__label {
+  height: 90%;
+}
+.searchbar--weui-search-bar__label wx-text {
+  display: inline-block;
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+
+.selectpart{
+  margin-left: 35rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.select{
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.selecttext{
+  color: #B0B0B0;
+  font-size: 22rpx;
+  margin-left: 12rpx;
+}
+
+.body{
+  margin: 20rpx 30rpx;
+  margin-top: 30rpx;
+}
+
+.item-box{
+  width: 330rpx;
+  height: 375rpx;
+  border: 1rpx solid #BBBBBB;  
+  margin-bottom: 30rpx;
+  border-radius: 20rpx;
+}
+.titleimg{
+  width: 99.6%;
+  height: 64%;
+  margin-top: 0.15%;
+  margin-left: 0.4%;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.timectl{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35rpx;
+  width: 96rpx;
+  border: 0rpx solid #f6f6f6;  
+  margin-left: 15rpx;
+  position: relative;
+  top: -3rpx;
+  border-radius: 30rpx;
+  margin-bottom: 7rpx;
+}
+.timetext{
+  letter-spacing: 2rpx;
+  font-size: 22rpx;
+  font-weight: bolder;
+  color: white;
+  margin: auto;
+}
+
+.titleArea{
+  font-size: 0;
+  position: relative;
+  margin-bottom: 5rpx;
+  left: 20rpx;
+  height: 80rpx;
+  width: 90%;
+}
+.title{
+  /*margin: auto;*/
+  margin-left: 0;
+  position: relative;
+  font-size: 24rpx;
+  font-weight: bold;
+  line-height: 1.5em;
+  letter-spacing: 2rpx;
+  color: #101010;
+}
+
+.left ,.right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right{
+  float: right;
+}

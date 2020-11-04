@@ -10,10 +10,10 @@ Page({
 
     water: [
       {
-        id: 1,
+        id: "fdsknclkvnkwslc1",
         state: 'false',
         titleimg: '/pages/assets/images/main_list4.png',
-        titletext: '两小时探索滨海休闲绿道，骑车徒步自由行~',
+        titletext: '两小时探索淘金山休闲绿道，骑车徒步自由行~',
         likenum: 2
       },
       {
@@ -67,6 +67,13 @@ Page({
     wx.redirectTo({
       url: '../dakaquan/dakaquan',
     })
+  },
+
+  getcontent:function(e){
+    var shareid = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../article/article?id=' + JSON.stringify(shareid),
+    });
   },
 
   // 点赞功能函数

@@ -1,0 +1,56 @@
+<!--pages/huodong/content/centent.wxml-->
+<view class="header">
+  <image class="actimg" src="{{actImgurl}}"></image>
+  <view class="actinfo">
+    <text class="title">{{acttitle}}</text>
+    <text class="thetime">开始时间：{{starttime}}</text>
+    <text class="thetime">结束时间：{{endtime}}</text>
+
+    <view class="statepart">
+      <view class="end" wx:if="{{isend=='true'}}">
+
+        <view class="timectl" style="background-color:#69A855">
+          <text class="timetext">已结束</text>
+        </view>
+
+      </view>
+      <view class="contin" wx:else>
+
+        <view class="timectl" style="background-color:#FF9A3C">
+          <text class="timetext">进行中</text>
+        </view>
+
+        <view class="signup" style="background-color:#87CC71" wx:if="{{baoming=='false'}}" bindtap="tobaoming">
+          <text class="signtext">我要报名</text>
+        </view>
+        <view class="signup" style="background-color:#FFB74A" wx:else>
+          <text class="signtext">已报名</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+<view class='line'></view>
+<view class="details">
+  <view class="detpart">
+    <text class="dettitle">活动地点</text>
+    <scroll-view class="addrsrol" scroll-y="true">
+      <text class="dettext">{{where}}</text>
+    </scroll-view>
+  </view>
+  <view class="detpart">
+    <text class="dettitle">活动介绍</text>
+    <scroll-view class="introsrol" scroll-y="true">
+      <text class="dettext">{{intro}}</text>
+    </scroll-view>
+  </view>
+  <view class="detpart">
+    <text class="dettitle">温馨提示</text>
+    <scroll-view class="tipsrol" scroll-y="true">
+      <block wx:for="{{tip}}">
+        <view class="dettext">{{index+1}}、{{item}}</view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

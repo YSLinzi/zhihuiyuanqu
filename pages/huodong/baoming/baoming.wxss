@@ -1,0 +1,87 @@
+/* pages/huodong/baoming/baoming.wxss */
+page{
+  background-color: #ECECEC;
+}
+
+.header{
+  background-color: #ffffff;
+  width: 100%;
+  margin-bottom: 5rpx;
+  padding: 20rpx 35rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.actimg{
+  border-radius: 20rpx 20rpx 0 0;
+  width: 300rpx;
+  height: 220rpx;
+}
+
+.actinfo{
+  font-size: 0;
+  margin-left: 40rpx;
+  width: 328rpx;
+  height: 240rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+  font-weight: 540;
+  height: 100rpx;
+  margin-top: 5rpx;
+}
+
+.thetime{
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+}
+
+.detail{
+  width: 100%;
+  padding-top: 20rpx;
+}
+
+.hang{
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  height: 100rpx;
+  width: 100%;
+  margin-top: 10rpx;
+}
+
+.hangtitle{
+  margin: auto;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.inp{
+  margin-top: 28rpx;
+  position: absolute;
+  left: 335rpx;
+}
+
+.holder{
+  font-size: 32rpx;
+  margin: auto;
+  margin-left: 0;
+}
+
+.picker{
+  margin-top: 28rpx;
+  position: absolute;
+  left: 335rpx;
+  font-size: 32rpx;
+}
+
+.okbtn{
+  margin-top: 300rpx;
+  width: 80%;
+}

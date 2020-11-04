@@ -9,7 +9,7 @@ Page({
     inputVal: "",
     notes: [
       {
-        id: "cdsknclkvnkwslc1",
+        id: "cnskbfbepwnfi",
         state: 'false',
         titleimg: '/pages/assets/travel-img/dashahe.png',
         titletext: "秋日浪漫，邀您共赏"
@@ -55,7 +55,7 @@ Page({
   //文章内容函数
   getcontent:function(e){
     var shareid = e.currentTarget.dataset.id;
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../article/article?id=' + JSON.stringify(shareid),
     });
   },

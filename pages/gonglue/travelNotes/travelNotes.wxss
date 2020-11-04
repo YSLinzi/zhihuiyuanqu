@@ -67,12 +67,14 @@
   left: 10rpx;
   margin-bottom:10rpx; 
   width: 94%;
+  font-size: 0;
 }
 
 .title{
   font-size: 30rpx;
-  font-weight: bolder;
+  font-weight: bold;
   color: #101010;
+  line-height: 1.4;
 }
 
 .buttominfo{

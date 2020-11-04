@@ -1,0 +1,38 @@
+<!--pages/huodong/huodongzonglan/huodongzonglan.wxml-->
+<view class="header">
+  <view class="selectpart">
+    <image class="select" src="/pages/assets/travel-img/select1.png"></image>
+    <text class="selecttext">点击筛选</text>
+  </view>
+  <mp-searchbar bindselectresult="selectResult" ext-class="weui-search-bar" search="{{search}}"></mp-searchbar>
+</view>
+
+
+<view class="body">
+  <view class="left">
+    <block wx:for="{{actvities}}" wx:key="">
+      <template is="actv-item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+    </block>
+  </view>
+  <view class="right">
+    <block wx:for="{{actvities}}" wx:key="">
+      <template is="actv-item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+    </block>
+  </view>
+</view>
+
+<!-- 定义活动列表组件模板 -->
+<template name="actv-item">
+  <view class='item-box' bindtap="getcontent" data-id="{{actID}}">
+    <image class="titleimg" src="{{actImgurl}}"></image>
+    <view class="timectl" style="background-color:#69A855" wx:if="{{isend=='true'}}">
+      <text class="timetext">已结束</text>
+    </view>
+    <view class="timectl" style="background-color:#FF9A3C" wx:else>
+      <text class="timetext">进行中</text>
+    </view>
+    <view class="titleArea">
+      <text class="title">{{actTitle}}</text>
+    </view>
+  </view>
+</template>

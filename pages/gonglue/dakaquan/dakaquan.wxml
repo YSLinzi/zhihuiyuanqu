@@ -22,6 +22,7 @@
   <block wx:for="{{daka}}" wx:key="">
   <template is="dakaitem" data="{{...item}}"></template>
 </block>
+<halfDialog isShow="{{show}}" bind:cancle="handleClick"/>
 </view>
 
 
@@ -56,8 +57,8 @@
       <view class="dakatime">
         <text class="timetext">{{timetext}}</text>
       </view>
-      <view class="comment">
-        <image class="icon-com" src="../a-icon/com.png"></image>
+      <view class="comment" bindtap="open">
+        <image class="icon-com" src="../a-icon/com.png" ></image>
       </view>
     </view>
   </view>

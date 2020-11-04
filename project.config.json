@@ -75,6 +75,30 @@
         {
           "name": "article",
           "pathName": "pages/gonglue/article/article",
+          "query": "shareid=cdsknclkvnkwslc1",
+          "scene": null
+        },
+        {
+          "name": "huodongzonglan",
+          "pathName": "pages/huodong/huodongzonglan/huodongzonglan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "content",
+          "pathName": "pages/huodong/content/content",
+          "query": "id=\"2ckdvwdsvbs\"",
+          "scene": null
+        },
+        {
+          "name": "baoming",
+          "pathName": "pages/huodong/baoming/baoming",
+          "query": "id=\"1ckajsbcksj\"&class=\"inner\"&title=\"淘金山紫薇花观赏\"&imgurl=\"../../assets/images/main_list2.jpg\"&stime=\"2020-09-08\"&etime=\"2020-11-20\"",
+          "scene": null
+        },
+        {
+          "name": "dakaquan",
+          "pathName": "pages/gonglue/dakaquan/dakaquan",
           "query": "",
           "scene": null
         }
