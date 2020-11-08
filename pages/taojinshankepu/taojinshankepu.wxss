@@ -155,6 +155,78 @@
     width: 90%;
     height: 80%;
   }
+
+/* 活动 */
+
+.body{
+  margin: 0 30rpx;
+}
+
+.item-box{
+  width: 330rpx;
+  height: 375rpx;
+  border: 1rpx solid #BBBBBB;  
+  margin-bottom: 30rpx;
+  border-radius: 20rpx;
+}
+.titleimg{
+  width: 99.6%;
+  height: 64%;
+  margin-top: 0.15%;
+  margin-left: 0.4%;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.timectl{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35rpx;
+  width: 96rpx;
+  border: 0rpx solid #f6f6f6;  
+  margin-left: 15rpx;
+  position: relative;
+  top: -3rpx;
+  border-radius: 30rpx;
+  margin-bottom: 7rpx;
+}
+.timetext{
+  letter-spacing: 2rpx;
+  font-size: 22rpx;
+  font-weight: bolder;
+  color: white;
+  margin: auto;
+}
+
+.titleArea{
+  font-size: 0;
+  position: relative;
+  margin-bottom: 5rpx;
+  left: 20rpx;
+  height: 80rpx;
+  width: 90%;
+}
+.acttitle{
+  /*margin: auto;*/
+  margin-left: 0;
+  position: relative;
+  font-size: 24rpx;
+  font-weight: bold;
+  line-height: 1.5em;
+  letter-spacing: 2rpx;
+  color: #101010;
+}
+
+.huodongleft ,.huodongright{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.huodongright{
+  float: right;
+}
+
+
+
 /*  
 .swiper-box .dongzhiwu {
   padding: 20rpx;

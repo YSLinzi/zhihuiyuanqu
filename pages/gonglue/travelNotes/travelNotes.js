@@ -91,8 +91,8 @@ Page({
           }
           --num;  //点赞数减1
           that.setData({
-            [`water[${i}].likenum`]: num,         //es6模板语法，常规写法报错
-            [`water[${i}.].state`]: 'false'    //我的数据中state为'false'是未点赞
+            [`water[${i}].likenum`]: num, 
+            [`water[${i}.].state`]: 'false'
           })
           wx.setStorageSync('noteszan', cookie_id);
           wx.showToast({

@@ -24,7 +24,8 @@
     "pages/gonglue/article/article",
     "pages/huodong/huodongzonglan/huodongzonglan",
     "pages/huodong/content/content",
-    "pages/huodong/baoming/baoming"
+    "pages/huodong/baoming/baoming",
+    "pages/huodong/webview/webview"
   ],
   "tabBar": {
     "color": "#bfbfbf",

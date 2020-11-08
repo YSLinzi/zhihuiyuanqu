@@ -50,7 +50,7 @@ Page({
       acttitle: "广东省青少年创新思维及科技实践大赛",
       actImgurl: "../../assets/images/main_list3.png",
       starttime: "2020-09-08",
-      endtime: "2020-11-03",
+      endtime: "2020-11-30",
       isend: 'false',
       baoming: 'false',
       where: '淘金山科教活动中心',
@@ -61,13 +61,11 @@ Page({
           state: 'false',
           articleID: JSON.parse(this.options.id)
         })
+      
       }
      var endday =this.data.endtime.split('-')
      var end = new Date(endday[0],endday[1]-1,endday[2])
      var today = new Date()
-    
-     console.log(end)
-     console.log(today)
      var diff = end.getTime() - today.getTime()
 
      if(diff<=0){
@@ -77,16 +75,26 @@ Page({
      }else{
        isend: 'false'
      }
-     var cookie_id = wx.getStorageSync('joinact')
-     if(cookie_id.includes(this.data.actID)){
-      this.setData({
-        baoming : 'true'
+     
+
+     this.setData({
+      baoming : 'false'
+    })
+    
+    var baomingls = wx.getStorageSync('mybaoming') || []
+    
+    console.log(this.data.actID)
+
+    for(var i in baomingls){
+
+      if(baomingls[i]['actid'] == this.data.actID){
+        this.setData({
+          baoming : 'true'
         })
-     }else{
-      this.setData({
-        baoming : 'false'
-        })
-     }
+      }
+    }
+
+     console.log(this.data.actID)
   },
 
   tobaoming(e){
@@ -106,7 +114,18 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    var baomingls = wx.getStorageSync('mybaoming') || []
+    
+    console.log(this.data.actID)
 
+    for(var i in baomingls){
+
+      if(baomingls[i]['actid'] == this.data.actID){
+        this.setData({
+          baoming : 'true'
+        })
+      }
+    }
   },
 
   /**

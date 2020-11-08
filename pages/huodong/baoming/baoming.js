@@ -11,13 +11,16 @@ Page({
     actImgurl: "../../assets/images/scroll-taojinshan.png",
     starttime: "xxxx-xx-xx",
     endtime: "xxxx-xx-xx",
+    href: 'http://gdfm.stlib.cn/notice/201907221.html',
+    ahtml: '<a href="http://gdfm.stlib.cn/notice/201907221.html">点此处进入活动官网</a>',
 
     today: '',
     date: '',
     myname: '',
     myphone: '',
     error: 'false',
-    errormsg: ''
+    errormsg: '',
+    baoming: 'false'
   },
 
   bindDateChange: function (e) {
@@ -58,6 +61,21 @@ Page({
         })
       } else {
         console.log(this.data.myname, this.data.date, this.data.myphone)
+        this.setData({
+          baoming: 'true'
+        })
+
+        var baomingls = wx.getStorageSync('mybaoming') || []; //报名信息列表
+
+        var s = {"actid" : this.data.actID, "myname":this.data.myname, "mydate":this.data.date, "myphone":this.data.myphone}
+
+        baomingls.unshift(s)
+
+        wx.setStorageSync('mybaoming', baomingls);
+          wx.showToast({
+            title: "报名成功!",
+            icon: 'success'
+          })
       }
     }
   },
@@ -103,6 +121,13 @@ Page({
       date: d,
       error: 'false'
     })
+  },
+
+
+  atap(e){
+    wx.navigateTo({
+      url: '../webview/webview?url=' + this.data.href
+    });
   },
 
   /**

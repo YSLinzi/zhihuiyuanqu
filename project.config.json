@@ -101,6 +101,36 @@
           "pathName": "pages/gonglue/dakaquan/dakaquan",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "issuenote",
+          "pathName": "pages/gonglue/issuenote/issuenote",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "search",
+          "pathName": "pages/gonglue/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "动植物科普",
+          "pathName": "pages/kepuAll/dongzhiwu/dongzhiwu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发布游记",
+          "pathName": "pages/gonglue/issuenote/issuenote",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "淘金山绿道科普页",
+          "pathName": "pages/taojinshankepu/taojinshankepu",
+          "query": "",
+          "scene": null
         }
       ]
     }

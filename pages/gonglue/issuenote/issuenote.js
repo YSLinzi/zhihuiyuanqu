@@ -44,14 +44,17 @@ Page({
     })
   },
   format(e) {
-    let { name, value } = e.target.dataset
+    let {
+      name,
+      value
+    } = e.target.dataset
     if (!name) return
     // console.log('format', name, value)
     this.editorCtx.format(name, value)
   },
 
 
-  insertImage() {
+  insertImage(e) {
     const that = this
     wx.chooseImage({
       count: 1,
@@ -64,6 +67,7 @@ Page({
           },
           width: '100%',
           success: function () {
+            console.log(src)
             console.log('insert image success')
           }
         })
@@ -167,7 +171,7 @@ Page({
       }
     })
   },*/
-  /**编辑器图片上传至服务器**/
+/**编辑器图片上传至服务器**/
 /*
 upImgs_editor: function (imgurl, index) {
   var that = this;

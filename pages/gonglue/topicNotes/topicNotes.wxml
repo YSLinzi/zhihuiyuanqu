@@ -1,7 +1,9 @@
 <!--pages/topicNotes/topicNotes.wxml-->
 
 <!-- 顶部选择栏 -->
-<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+<search></search>
+<!-- <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar> -->
+
 <view class='tab'>
   <view class="topic" bindtap="totopicnotes">
     <text class="topictext">主题攻略</text>

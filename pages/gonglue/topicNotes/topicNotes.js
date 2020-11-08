@@ -5,10 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    inputShowed: false,/* 两个变量用于搜索 */
     inputVal: "",
-    notes: [
-      {
+    inputShowed: false,
+    notes: [{
         id: "cnskbfbepwnfi",
         state: 'false',
         titleimg: '/pages/assets/travel-img/dashahe.png',
@@ -28,8 +27,36 @@ Page({
       },
     ], //旅游信息合集
 
-    iszan: []        //点过赞的id集合
+    iszan: [] //点过赞的id集合
   },
+
+
+  //searchtab 函数
+  /*showInput: function () {
+    this.setData({
+    inputShowed: 'true'
+    });
+    },
+    hideInput: function () {
+    this.setData({
+    inputVal: "",
+    inputShowed: false
+    });
+    // getList(this);
+    },
+    clearInput: function () {
+    this.setData({
+    inputVal: ""
+    });
+    // getList(this);
+    },
+    inputTyping: function (e) {
+    //搜索数据
+    // getList(this, e.detail.value);
+    this.setData({
+    inputVal: e.detail.value
+    });
+    },*/
 
 
   // 关于页面跳转函数
@@ -46,14 +73,14 @@ Page({
       url: '../issuenote/issuenote',
     })
   },
-  todakaquan: function(e){
+  todakaquan: function (e) {
     wx.redirectTo({
       url: '../dakaquan/dakaquan',
     })
   },
 
   //文章内容函数
-  getcontent:function(e){
+  getcontent: function (e) {
     var shareid = e.currentTarget.dataset.id;
     wx.navigateTo({
       url: '../article/article?id=' + JSON.stringify(shareid),
@@ -63,37 +90,31 @@ Page({
   // 点赞功能函数
   zan: function (item_id) {
     var that = this;
-    var cookie_id = wx.getStorageSync('zan') || [];  //获取全部点赞的id
+    var cookie_id = wx.getStorageSync('topiczan') || []; //获取全部点赞的id
     for (var i = 0; i < that.data.notes.length; i++) {
-      if (that.data.notes[i].id == item_id) {     //数据列表中找到对应的id
-        var num = that.data.notes[i].gtnum;      //当前点赞数
-        if (cookie_id.includes(item_id)) {         //已经点过赞了，取消点赞
+      if (that.data.notes[i].id == item_id) { //数据列表中找到对应的id
+        if (cookie_id.includes(item_id)) { //已经点过赞了，取消点赞
           for (var j in cookie_id) {
             if (cookie_id[j] == item_id) {
-              cookie_id.splice(j, 1);  //删除取消点赞的id
+              cookie_id.splice(j, 1); //删除取消点赞的id
             }
           }
-          --num;  //点赞数减1
           that.setData({
-            [`notes[${i}].gtnum`]: num,         //es6模板语法，常规写法报错
-            [`notes[${i}.].state`]: 'false'    //我的数据中state为'false'是未点赞
+            [`notes[${i}.].state`]: 'false'
           })
-          wx.setStorageSync('zan', cookie_id);
+          wx.setStorageSync('topiczan', cookie_id);
           wx.showToast({
-            title: "取消点赞!",
+            title: "取消收藏!",
             icon: 'none'
           })
-        } else {        //点赞操作
-
-          ++num;    //点赞数加1
+        } else { //点赞操作
           that.setData({
-            [`notes[${i}].gtnum`]: num,
             [`notes[${i}.].state`]: 'true'
           })
-          cookie_id.unshift(item_id);   //新增赞的id
-          wx.setStorageSync('zan', cookie_id);
+          cookie_id.unshift(item_id); //新增赞的id
+          wx.setStorageSync('topiczan', cookie_id);
           wx.showToast({
-            title: "点赞成功!",
+            title: "收藏成功!",
             icon: 'none'
           })
         }
@@ -128,19 +149,25 @@ Page({
   onLoad: function (options) {
     this.setData({
       search: this.search.bind(this)
-  })
+    })
   },
 
   search: function (value) {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
-        }, 200)
+      setTimeout(() => {
+        resolve([{
+          text: '搜索结果',
+          value: 1
+        }, {
+          text: '搜索结果2',
+          value: 2
+        }])
+      }, 200)
     })
-},
-selectResult: function (e) {
+  },
+  selectResult: function (e) {
     console.log('select result', e.detail)
-},
+  },
 
 
   /**

@@ -15,23 +15,19 @@ Page({
     Img_url:'',
     // tab切换 
     currentTab: 0,
-    list: [{
-      title: '如何制作树叶书签',
-      url: 'https://p0.ssl.img.360kuai.com/t01eea333270bf62007.gif',
-     }, {
-      title: '小小发明家',
-      url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600629220694&di=abf7780bcdf9929c4f492b1bd6c2fab4&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170421%2F0ac88600566e48e0b9df269318ac7543_th.jpeg',
-     },{
-      title: '树叶相框DIY',
-      url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600629120822&di=7f3bb1e70a45be707c1ea3b93dcb9f23&imgtype=0&src=http%3A%2F%2Fphotocdn.sohu.com%2F20150706%2Fmp21430116_1436171922098_3.jpeg',
-     },{
-      title: '自制花盆',
-      url: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1061599899,119681977&fm=26&gp=0.jpg',
-     },{
-      title: '如何制作树叶书签',
-      url: 'https://p0.ssl.img.360kuai.com/t01eea333270bf62007.gif',
-     }
-    ],
+    actvities: [{
+      actID: "1ckajsbcksj",
+      actImgurl: "../assets/images/main_list2.jpg",
+      actTitle: "淘金山紫薇花观赏",
+      actEndTime: "",
+      isend: 'false',
+    },{
+      actID: "2ckdvwdsvbs",
+      actImgurl: "../assets/images/main_list3.png",
+      actTitle: "广东省青少年创新思维及科技实践大赛",
+      actEndTime: "",
+      isend: 'true'
+    }],
     dongzhiwu:[{
       id:1,
       title:'风铃木',
@@ -152,5 +148,15 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+
+  /* 文章详情 */
+  getcontent(e){
+    var shareid = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../huodong/content/content?id=' + JSON.stringify(shareid),
+    });
+  },
 })
+

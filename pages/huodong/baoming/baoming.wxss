@@ -45,6 +45,19 @@ page{
   padding-top: 20rpx;
 }
 
+.outerdetail{
+  width: 100%;
+  padding: 20rpx;
+  background-color: #ffffff;
+  margin-top: 20rpx;
+}
+
+.atext{
+  font-size: 32rpx;
+  color: blue;
+  border-bottom: blue;
+}
+
 .hang{
   display: flex;
   flex-direction: row;
